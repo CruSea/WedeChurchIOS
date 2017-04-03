@@ -1,17 +1,17 @@
 //
-//  MenuCell.swift
+//  FavouriteBottomVCTableViewCell.swift
 //  WedeChurchIOS
 //
-//  Created by Muluken on 3/30/17.
+//  Created by Muluken on 4/3/17.
 //  Copyright © 2017 GCME. All rights reserved.
 //
 
 import UIKit
 
-class MenuCell: UITableViewCell {
+class FavouriteBottomVCTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var lblMenuname: UILabel!
-    @IBOutlet weak var imgIcon: UIImageView!
+    @IBOutlet weak var contents: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,3 +24,4 @@ class MenuCell: UITableViewCell {
     }
     
 }
+

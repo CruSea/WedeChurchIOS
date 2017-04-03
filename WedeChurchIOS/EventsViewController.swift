@@ -10,9 +10,20 @@ import UIKit
 
 class EventsViewController: UIViewController {
 
+    @IBOutlet weak var menuBar: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //slide menu controller of Events ViewCOntroller
+        if revealViewController() != nil {
+            
+            menuBar.target = revealViewController()
+            menuBar.action = #selector(SWRevealViewController.revealToggle(_:))
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+            
+            
+            
+        }
         // Do any additional setup after loading the view.
     }
 

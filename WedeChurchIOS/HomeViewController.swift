@@ -7,20 +7,42 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var Map: MKMapView!
+    var locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        addSearchResultView()
 
+        //slide menu of home viewcontroller
+        if revealViewController() != nil {
+           
+            menuButton.target = revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+            
+            
+            
+        }
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func addSearchResultView(){
+        
+        let searchVC = storyboard?.instantiateViewController(withIdentifier: "frequentBottomVC") as! BottomLocationVCViewController
+        
+        searchVC.view.frame = CGRect(x: 0, y: UIScreen.main.bounds.height , width: self.view.frame.width, height: self.view.frame.height)
+        self.addChildViewController(searchVC)
+        self.view.addSubview(searchVC.view)
+        searchVC.didMove(toParentViewController: self)
     }
-    
 
     /*
     // MARK: - Navigation
