@@ -9,16 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        displayWalkthroughs()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func displayWalkthroughs()
+    {
+        // check if walkthroughs have been shown
+        let userDefaults = UserDefaults.standard
+        let displayedWalkthrough = userDefaults.bool(forKey: "DisplayedWalkthrough")
+        
+        // if we haven't shown the walkthroughs, let's show them
+        if !displayedWalkthrough {
+            // instantiate neew PageVC via storyboard
+            if let pageViewController = storyboard?.instantiateViewController(withIdentifier: "PageViewController") as? PageViewController {
+                self.present(pageViewController, animated: true, completion: nil)
+            }
+        }
     }
+
 
 
 }
