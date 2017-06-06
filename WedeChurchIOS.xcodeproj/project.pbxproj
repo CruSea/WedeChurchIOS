@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832AC8BC1EE59C900065A5EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832AC8BB1EE59C900065A5EA /* CoreLocation.framework */; };
 		832FF3B31EC19F8100310B4F /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FF3B21EC19F8100310B4F /* EventDetailViewController.swift */; };
 		833317231EAF2CEA003DCF71 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833317211EAF2CEA003DCF71 /* WalkthroughViewController.swift */; };
 		833317241EAF2CEA003DCF71 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833317221EAF2CEA003DCF71 /* PageViewController.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		832AC8BB1EE59C900065A5EA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		832FF3B21EC19F8100310B4F /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		833317211EAF2CEA003DCF71 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		833317221EAF2CEA003DCF71 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832AC8BC1EE59C900065A5EA /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832AC8BA1EE59C900065A5EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				832AC8BB1EE59C900065A5EA /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		833317251EAF3818003DCF71 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +166,7 @@
 				836235381E7DA28100F5844B /* WedeChurchIOSTests */,
 				836235431E7DA28100F5844B /* WedeChurchIOSUITests */,
 				836235221E7DA28000F5844B /* Products */,
+				832AC8BA1EE59C900065A5EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

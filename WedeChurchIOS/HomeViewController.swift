@@ -14,11 +14,34 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var Map: MKMapView!
-    var locationManager = CLLocationManager()
+    
+    // location managerer declaration
+    var manager = CLLocationManager()
+    
+    //finding users current location
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    {
+        let location = locations[0]
+        
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
+        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+        Map.setRegion(region, animated: true)
+        
+        print(location.altitude)
+        print(location.speed)
+        
+        self.Map.showsUserLocation = true
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addSearchResultView()
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
 
         //slide menu of home viewcontroller
         if revealViewController() != nil {

@@ -100,7 +100,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="churches" translatesAutoresizingMaskIntoConstraints="NO" id="1T8-JW-Byf">
-                                <rect key="frame" x="64" y="80" width="248" height="380"/>
+                                <rect key="frame" x="64" y="80.5" width="247.5" height="379"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1T8-JW-Byf" secondAttribute="height" multiplier="62:127" constant="62.488188976377955" id="Za9-6H-csT"/>
                                 </constraints>
@@ -153,7 +153,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfR-Pk-Y97">
-                                <rect key="frame" x="16" y="497" width="343" height="50"/>
+                                <rect key="frame" x="16" y="402" width="343" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="qlo-U8-fLm"/>
                                 </constraints>
@@ -165,21 +165,8 @@
                                     <segue destination="T0d-hM-5vi" kind="show" id="5yM-f5-kGr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOy-Un-Na5">
-                                <rect key="frame" x="16" y="555" width="343" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="LRy-If-QG3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Do not have an account? Register here">
-                                    <color key="titleColor" red="0.62745098040000002" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="tmf-1M-Xz0" kind="show" id="9eM-Qs-m4e"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4O1-Ws-ItC">
-                                <rect key="frame" x="16" y="415" width="343" height="50"/>
+                                <rect key="frame" x="16" y="344" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.97376590967178345" green="0.78393608331680298" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="DlH-MS-PPD"/>
@@ -199,13 +186,26 @@
                                     <constraint firstAttribute="width" constant="343" id="VgD-HD-bs5"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOy-Un-Na5">
+                                <rect key="frame" x="16" y="460" width="343" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="LRy-If-QG3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Do not have an account? Register here">
+                                    <color key="titleColor" red="0.62745098040000002" green="1" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tmf-1M-Xz0" kind="show" id="9eM-Qs-m4e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.026127705350518227" green="0.70456445217132568" blue="0.69228392839431763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FfR-Pk-Y97" firstAttribute="top" secondItem="4O1-Ws-ItC" secondAttribute="bottom" constant="32" id="1By-bw-QaE"/>
+                            <constraint firstItem="FfR-Pk-Y97" firstAttribute="top" secondItem="4O1-Ws-ItC" secondAttribute="bottom" constant="8" id="1By-bw-QaE"/>
                             <constraint firstItem="gOy-Un-Na5" firstAttribute="top" secondItem="FfR-Pk-Y97" secondAttribute="bottom" constant="8" id="47h-WX-ch7"/>
-                            <constraint firstItem="4O1-Ws-ItC" firstAttribute="top" secondItem="VTK-9A-RuU" secondAttribute="bottom" constant="55" id="6OX-8J-R5o"/>
-                            <constraint firstItem="FfR-Pk-Y97" firstAttribute="top" secondItem="4O1-Ws-ItC" secondAttribute="bottom" constant="32" id="8Ps-3E-JW7"/>
+                            <constraint firstItem="4O1-Ws-ItC" firstAttribute="top" secondItem="VTK-9A-RuU" secondAttribute="bottom" constant="-16" id="6OX-8J-R5o"/>
+                            <constraint firstItem="FfR-Pk-Y97" firstAttribute="top" secondItem="4O1-Ws-ItC" secondAttribute="bottom" constant="8" id="8Ps-3E-JW7"/>
                             <constraint firstItem="gOy-Un-Na5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GVS-4g-ys4"/>
                             <constraint firstItem="gOy-Un-Na5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NJk-TZ-Apq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VTK-9A-RuU" secondAttribute="trailing" id="YvW-rG-J8T"/>
