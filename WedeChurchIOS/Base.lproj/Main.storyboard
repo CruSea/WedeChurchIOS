@@ -1161,7 +1161,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4S2-js-tKQ">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="churchEvents" id="4S2-js-tKQ" customClass="OneChurchCollectionViewCell" customModule="WedeChurchIOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="7" width="187" height="168"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1170,15 +1170,16 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wedechurch-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="7pb-gc-7pO">
                                                     <rect key="frame" x="0.0" y="0.0" width="187" height="135"/>
-                                                    <color key="backgroundColor" red="0.98928624389999997" green="0.29630255700000002" blue="0.040206305679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.792098105" green="0.79219120740000004" blue="0.79205530879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="135" id="h2W-HK-C7u"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33M-Hs-H5u">
                                                     <rect key="frame" x="0.0" y="136" width="187" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="backgroundColor" red="0.97376590969999999" green="0.78393608329999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1193,303 +1194,10 @@
                                             <constraint firstAttribute="bottom" secondItem="33M-Hs-H5u" secondAttribute="bottom" id="h0S-AE-fWr"/>
                                             <constraint firstItem="33M-Hs-H5u" firstAttribute="top" secondItem="7pb-gc-7pO" secondAttribute="bottom" constant="1" id="obO-VF-dP4"/>
                                         </constraints>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wcS-CP-I3m">
-                                        <rect key="frame" x="197" y="7" width="187" height="168"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="187" height="168"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wedechurch-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="mj2-sJ-Chg">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="135"/>
-                                                    <color key="backgroundColor" red="0.98928624389999997" green="0.29630255700000002" blue="0.040206305679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="135" id="lRX-ir-VNi"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3N-4Z-WQl">
-                                                    <rect key="frame" x="0.0" y="136" width="187" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="mj2-sJ-Chg" firstAttribute="top" secondItem="wcS-CP-I3m" secondAttribute="top" id="0th-1I-Znv"/>
-                                            <constraint firstItem="E3N-4Z-WQl" firstAttribute="top" secondItem="mj2-sJ-Chg" secondAttribute="bottom" constant="1" id="8d3-B7-RiG"/>
-                                            <constraint firstAttribute="trailing" secondItem="mj2-sJ-Chg" secondAttribute="trailing" id="QBY-W1-oeI"/>
-                                            <constraint firstItem="E3N-4Z-WQl" firstAttribute="leading" secondItem="wcS-CP-I3m" secondAttribute="leading" id="YyT-kW-gCq"/>
-                                            <constraint firstAttribute="bottom" secondItem="E3N-4Z-WQl" secondAttribute="bottom" id="bN7-PS-wiA"/>
-                                            <constraint firstItem="mj2-sJ-Chg" firstAttribute="leading" secondItem="wcS-CP-I3m" secondAttribute="leading" id="fT2-gF-eoQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="E3N-4Z-WQl" secondAttribute="trailing" id="mgK-7R-LOF"/>
-                                            <constraint firstItem="E3N-4Z-WQl" firstAttribute="top" secondItem="mj2-sJ-Chg" secondAttribute="bottom" constant="1" id="wJW-Bh-74A"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="I4o-gG-fZx">
-                                        <rect key="frame" x="394" y="7" width="187" height="168"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="187" height="168"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wedechurch-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Mse-D4-m0O">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="135"/>
-                                                    <color key="backgroundColor" red="0.98928624389999997" green="0.29630255700000002" blue="0.040206305679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="135" id="fMd-r3-ifJ"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9L-pS-wkL">
-                                                    <rect key="frame" x="0.0" y="136" width="187" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="N9L-pS-wkL" firstAttribute="top" secondItem="Mse-D4-m0O" secondAttribute="bottom" constant="1" id="1dz-vC-nZW"/>
-                                            <constraint firstItem="Mse-D4-m0O" firstAttribute="leading" secondItem="I4o-gG-fZx" secondAttribute="leading" id="DjP-Ua-ToT"/>
-                                            <constraint firstItem="N9L-pS-wkL" firstAttribute="top" secondItem="Mse-D4-m0O" secondAttribute="bottom" constant="1" id="YwZ-40-Uu4"/>
-                                            <constraint firstAttribute="trailing" secondItem="N9L-pS-wkL" secondAttribute="trailing" id="aEF-Pe-Ran"/>
-                                            <constraint firstItem="N9L-pS-wkL" firstAttribute="leading" secondItem="I4o-gG-fZx" secondAttribute="leading" id="l6B-hM-pHl"/>
-                                            <constraint firstAttribute="trailing" secondItem="Mse-D4-m0O" secondAttribute="trailing" id="pX7-O1-6iW"/>
-                                            <constraint firstItem="Mse-D4-m0O" firstAttribute="top" secondItem="I4o-gG-fZx" secondAttribute="top" id="t2q-gZ-yCO"/>
-                                            <constraint firstAttribute="bottom" secondItem="N9L-pS-wkL" secondAttribute="bottom" id="vhh-MH-m2p"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Zec-LK-4TH">
-                                        <rect key="frame" x="591" y="7" width="187" height="168"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="187" height="168"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wedechurch-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="RYS-Dp-hzx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="135"/>
-                                                    <color key="backgroundColor" red="0.98928624389999997" green="0.29630255700000002" blue="0.040206305679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="135" id="oOY-mR-eV9"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQj-nf-jhe">
-                                                    <rect key="frame" x="0.0" y="136" width="187" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="cQj-nf-jhe" firstAttribute="top" secondItem="RYS-Dp-hzx" secondAttribute="bottom" constant="1" id="3AL-r2-hlR"/>
-                                            <constraint firstAttribute="trailing" secondItem="cQj-nf-jhe" secondAttribute="trailing" id="55G-2X-Nyk"/>
-                                            <constraint firstItem="RYS-Dp-hzx" firstAttribute="leading" secondItem="Zec-LK-4TH" secondAttribute="leading" id="6QE-h1-WaF"/>
-                                            <constraint firstItem="cQj-nf-jhe" firstAttribute="top" secondItem="RYS-Dp-hzx" secondAttribute="bottom" constant="1" id="8tX-BV-l58"/>
-                                            <constraint firstItem="cQj-nf-jhe" firstAttribute="leading" secondItem="Zec-LK-4TH" secondAttribute="leading" id="CgA-CH-ID2"/>
-                                            <constraint firstAttribute="bottom" secondItem="cQj-nf-jhe" secondAttribute="bottom" id="iqN-v1-fXB"/>
-                                            <constraint firstAttribute="trailing" secondItem="RYS-Dp-hzx" secondAttribute="trailing" id="itx-Hh-1fs"/>
-                                            <constraint firstItem="RYS-Dp-hzx" firstAttribute="top" secondItem="Zec-LK-4TH" secondAttribute="top" id="jUx-eb-Zx0"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="OBx-BD-fxI">
-                                        <rect key="frame" x="788" y="7" width="187" height="168"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="187" height="168"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wedechurch-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="UDH-80-RhZ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="135"/>
-                                                    <color key="backgroundColor" red="0.98928624389999997" green="0.29630255700000002" blue="0.040206305679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="135" id="1g1-Ds-IsK"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-k5-rRp">
-                                                    <rect key="frame" x="0.0" y="136" width="187" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="Vdx-k5-rRp" firstAttribute="leading" secondItem="OBx-BD-fxI" secondAttribute="leading" id="0Of-Ca-oeY"/>
-                                            <constraint firstItem="Vdx-k5-rRp" firstAttribute="top" secondItem="UDH-80-RhZ" secondAttribute="bottom" constant="1" id="Cmv-NJ-zES"/>
-                                            <constraint firstItem="Vdx-k5-rRp" firstAttribute="top" secondItem="UDH-80-RhZ" secondAttribute="bottom" constant="1" id="CuI-cf-7Bn"/>
-                                            <constraint firstItem="UDH-80-RhZ" firstAttribute="leading" secondItem="OBx-BD-fxI" secondAttribute="leading" id="Lvo-5o-Xpn"/>
-                                            <constraint firstAttribute="bottom" secondItem="Vdx-k5-rRp" secondAttribute="bottom" id="MxN-Og-o5f"/>
-                                            <constraint firstItem="UDH-80-RhZ" firstAttribute="top" secondItem="OBx-BD-fxI" secondAttribute="top" id="dI2-LH-Lyi"/>
-                                            <constraint firstAttribute="trailing" secondItem="Vdx-k5-rRp" secondAttribute="trailing" id="s0e-eg-Tmy"/>
-                                            <constraint firstAttribute="trailing" secondItem="UDH-80-RhZ" secondAttribute="trailing" id="vQW-5Z-njk"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zy8-a4-iHx">
-                                        <rect key="frame" x="985" y="7" width="187" height="168"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="187" height="168"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wedechurch-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="TsU-lY-IBh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="135"/>
-                                                    <color key="backgroundColor" red="0.98928624389999997" green="0.29630255700000002" blue="0.040206305679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="135" id="YKQ-b2-Hix"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBF-fl-lci">
-                                                    <rect key="frame" x="0.0" y="136" width="187" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="BBF-fl-lci" secondAttribute="trailing" id="1h6-qX-512"/>
-                                            <constraint firstAttribute="bottom" secondItem="BBF-fl-lci" secondAttribute="bottom" id="EZV-Hk-dnV"/>
-                                            <constraint firstItem="BBF-fl-lci" firstAttribute="top" secondItem="TsU-lY-IBh" secondAttribute="bottom" constant="1" id="F8L-i7-cOW"/>
-                                            <constraint firstAttribute="trailing" secondItem="TsU-lY-IBh" secondAttribute="trailing" id="Tb3-nq-z0U"/>
-                                            <constraint firstItem="BBF-fl-lci" firstAttribute="top" secondItem="TsU-lY-IBh" secondAttribute="bottom" constant="1" id="bPW-6R-6im"/>
-                                            <constraint firstItem="BBF-fl-lci" firstAttribute="leading" secondItem="zy8-a4-iHx" secondAttribute="leading" id="cKy-Jk-ISc"/>
-                                            <constraint firstItem="TsU-lY-IBh" firstAttribute="top" secondItem="zy8-a4-iHx" secondAttribute="top" id="gD9-cB-94F"/>
-                                            <constraint firstItem="TsU-lY-IBh" firstAttribute="leading" secondItem="zy8-a4-iHx" secondAttribute="leading" id="hir-QA-ib4"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BEH-E4-lxI">
-                                        <rect key="frame" x="1182" y="7" width="187" height="168"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="187" height="168"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wedechurch-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="0gV-rk-kaC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="135"/>
-                                                    <color key="backgroundColor" red="0.98928624389999997" green="0.29630255700000002" blue="0.040206305679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="135" id="0tu-jv-RTp"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y60-Nh-D9w">
-                                                    <rect key="frame" x="0.0" y="136" width="187" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="0gV-rk-kaC" secondAttribute="trailing" id="6K8-yU-a4o"/>
-                                            <constraint firstAttribute="trailing" secondItem="y60-Nh-D9w" secondAttribute="trailing" id="7EA-EF-T5b"/>
-                                            <constraint firstItem="y60-Nh-D9w" firstAttribute="leading" secondItem="BEH-E4-lxI" secondAttribute="leading" id="Cvv-Jq-pbN"/>
-                                            <constraint firstItem="y60-Nh-D9w" firstAttribute="top" secondItem="0gV-rk-kaC" secondAttribute="bottom" constant="1" id="Ovv-DX-H5S"/>
-                                            <constraint firstItem="0gV-rk-kaC" firstAttribute="leading" secondItem="BEH-E4-lxI" secondAttribute="leading" id="QrY-r3-bMX"/>
-                                            <constraint firstItem="y60-Nh-D9w" firstAttribute="top" secondItem="0gV-rk-kaC" secondAttribute="bottom" constant="1" id="Twt-xp-lEc"/>
-                                            <constraint firstAttribute="bottom" secondItem="y60-Nh-D9w" secondAttribute="bottom" id="dA4-Qm-8dw"/>
-                                            <constraint firstItem="0gV-rk-kaC" firstAttribute="top" secondItem="BEH-E4-lxI" secondAttribute="top" id="xiV-Rx-E1H"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="p9F-vH-VA9">
-                                        <rect key="frame" x="1379" y="7" width="187" height="168"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="187" height="168"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wedechurch-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="S3P-jX-d1t">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="135"/>
-                                                    <color key="backgroundColor" red="0.98928624389999997" green="0.29630255700000002" blue="0.040206305679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="135" id="Nq6-Cn-Fgh"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2b-mu-Y8H">
-                                                    <rect key="frame" x="0.0" y="136" width="187" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="n2b-mu-Y8H" firstAttribute="leading" secondItem="p9F-vH-VA9" secondAttribute="leading" id="0Ed-ia-tAJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="n2b-mu-Y8H" secondAttribute="bottom" id="23q-Ag-5x5"/>
-                                            <constraint firstItem="n2b-mu-Y8H" firstAttribute="top" secondItem="S3P-jX-d1t" secondAttribute="bottom" constant="1" id="3g0-a1-CqO"/>
-                                            <constraint firstAttribute="trailing" secondItem="n2b-mu-Y8H" secondAttribute="trailing" id="Gcw-tD-Fak"/>
-                                            <constraint firstItem="S3P-jX-d1t" firstAttribute="top" secondItem="p9F-vH-VA9" secondAttribute="top" id="KPq-cV-YSX"/>
-                                            <constraint firstItem="S3P-jX-d1t" firstAttribute="leading" secondItem="p9F-vH-VA9" secondAttribute="leading" id="n2i-1L-5JU"/>
-                                            <constraint firstItem="n2b-mu-Y8H" firstAttribute="top" secondItem="S3P-jX-d1t" secondAttribute="bottom" constant="1" id="oYt-S6-jEA"/>
-                                            <constraint firstAttribute="trailing" secondItem="S3P-jX-d1t" secondAttribute="trailing" id="tO6-wb-mtD"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kLQ-jv-Dcc">
-                                        <rect key="frame" x="1576" y="7" width="187" height="168"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="187" height="168"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wedechurch-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="JFE-07-eTT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="135"/>
-                                                    <color key="backgroundColor" red="0.98928624389999997" green="0.29630255700000002" blue="0.040206305679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="135" id="dLd-pO-giI"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGj-HW-UA7">
-                                                    <rect key="frame" x="0.0" y="136" width="187" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="dGj-HW-UA7" secondAttribute="trailing" id="0Gc-QP-9eI"/>
-                                            <constraint firstAttribute="trailing" secondItem="JFE-07-eTT" secondAttribute="trailing" id="0kg-Yk-Nab"/>
-                                            <constraint firstItem="dGj-HW-UA7" firstAttribute="top" secondItem="JFE-07-eTT" secondAttribute="bottom" constant="1" id="6tw-Uk-IAm"/>
-                                            <constraint firstItem="dGj-HW-UA7" firstAttribute="top" secondItem="JFE-07-eTT" secondAttribute="bottom" constant="1" id="Kam-pU-Ume"/>
-                                            <constraint firstAttribute="bottom" secondItem="dGj-HW-UA7" secondAttribute="bottom" id="iv7-TC-FVv"/>
-                                            <constraint firstItem="JFE-07-eTT" firstAttribute="top" secondItem="kLQ-jv-Dcc" secondAttribute="top" id="mZj-7K-uew"/>
-                                            <constraint firstItem="dGj-HW-UA7" firstAttribute="leading" secondItem="kLQ-jv-Dcc" secondAttribute="leading" id="yxB-Lz-ut3"/>
-                                            <constraint firstItem="JFE-07-eTT" firstAttribute="leading" secondItem="kLQ-jv-Dcc" secondAttribute="leading" id="zUr-qD-YMo"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HFZ-xc-ls5">
-                                        <rect key="frame" x="1773" y="7" width="187" height="168"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="187" height="168"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wedechurch-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="8nm-kD-cfv">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="135"/>
-                                                    <color key="backgroundColor" red="0.98928624389999997" green="0.29630255700000002" blue="0.040206305679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="135" id="Tz7-1J-Z2B"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L7-kI-7D4">
-                                                    <rect key="frame" x="0.0" y="136" width="187" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="0L7-kI-7D4" secondAttribute="trailing" id="2uU-UF-Eeh"/>
-                                            <constraint firstItem="8nm-kD-cfv" firstAttribute="leading" secondItem="HFZ-xc-ls5" secondAttribute="leading" id="AwD-sU-eC6"/>
-                                            <constraint firstItem="8nm-kD-cfv" firstAttribute="top" secondItem="HFZ-xc-ls5" secondAttribute="top" id="FQr-Ef-Wsl"/>
-                                            <constraint firstItem="0L7-kI-7D4" firstAttribute="top" secondItem="8nm-kD-cfv" secondAttribute="bottom" constant="1" id="PDS-LQ-6su"/>
-                                            <constraint firstItem="0L7-kI-7D4" firstAttribute="top" secondItem="8nm-kD-cfv" secondAttribute="bottom" constant="1" id="QZP-Eu-ySZ"/>
-                                            <constraint firstItem="0L7-kI-7D4" firstAttribute="leading" secondItem="HFZ-xc-ls5" secondAttribute="leading" id="RuP-g8-miz"/>
-                                            <constraint firstAttribute="bottom" secondItem="0L7-kI-7D4" secondAttribute="bottom" id="erw-By-Idb"/>
-                                            <constraint firstAttribute="trailing" secondItem="8nm-kD-cfv" secondAttribute="trailing" id="yFB-PI-Lu4"/>
-                                        </constraints>
+                                        <connections>
+                                            <outlet property="churchEventImage" destination="7pb-gc-7pO" id="2Jw-bi-Rhs"/>
+                                            <outlet property="churchEventName" destination="33M-Hs-H5u" id="7Iy-cu-PEX"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

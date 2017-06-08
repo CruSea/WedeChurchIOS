@@ -32,6 +32,7 @@
 		836235451E7DA28100F5844B /* WedeChurchIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836235441E7DA28100F5844B /* WedeChurchIOSUITests.swift */; };
 		836F0C811E82B8AE0093C936 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F0C801E82B8AE0093C936 /* LoginViewController.swift */; };
 		836F0C831E82B8BC0093C936 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F0C821E82B8BC0093C936 /* SignUpViewController.swift */; };
+		83BF0EE01EE9391800EBD759 /* OneChurchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF0EDF1EE9391800EBD759 /* OneChurchCollectionViewCell.swift */; };
 		83D71F8F1E8BDF9600D1D356 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */; };
 		83EDFF281EC08C340008CFB3 /* EventMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDFF271EC08C340008CFB3 /* EventMainViewController.swift */; };
 		83EDFF2A1EC08C500008CFB3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDFF291EC08C500008CFB3 /* CollectionViewCell.swift */; };
@@ -102,6 +103,7 @@
 		836235461E7DA28100F5844B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836F0C801E82B8AE0093C936 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		836F0C821E82B8BC0093C936 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		83BF0EDF1EE9391800EBD759 /* OneChurchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneChurchCollectionViewCell.swift; sourceTree = "<group>"; };
 		83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		83EDFF271EC08C340008CFB3 /* EventMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMainViewController.swift; sourceTree = "<group>"; };
 		83EDFF291EC08C500008CFB3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			children = (
 				83FEAE4E1EDD5E3600646E11 /* ChurchDetailViewController.swift */,
 				830FEBBA1EE858F00085801D /* ChurchListTableViewCell.swift */,
+				83BF0EDF1EE9391800EBD759 /* OneChurchCollectionViewCell.swift */,
 			);
 			name = Church;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				83D71F8F1E8BDF9600D1D356 /* HomeViewController.swift in Sources */,
 				830FEBB51EE8510A0085801D /* DenominationViewController.swift in Sources */,
 				836F0C811E82B8AE0093C936 /* LoginViewController.swift in Sources */,
+				83BF0EE01EE9391800EBD759 /* OneChurchCollectionViewCell.swift in Sources */,
 				830FEBA91EE7F1770085801D /* EventListViewController.swift in Sources */,
 				83EDFF2A1EC08C500008CFB3 /* CollectionViewCell.swift in Sources */,
 				830FEBBB1EE858F00085801D /* ChurchListTableViewCell.swift in Sources */,
