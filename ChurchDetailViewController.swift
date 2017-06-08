@@ -88,7 +88,7 @@ class ChurchDetailViewController: UIViewController,UICollectionViewDataSource, U
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! OneChurchCollectionViewCell
         cell.indexPath = indexPath
         //  cell.topButton.backgroundColor = UIColor .blue
-        cell.layer.borderWidth = 20.0;
+        cell.layer.cornerRadius = 20.0;
         // cell.layer.borderColor = UIColor.green.cgColor
         // cell.topLabel.textColor = UIColor.blue
         cell.churchEventImage.image = UIImage(named: (self.churchEventImages?[indexPath.row])!)
