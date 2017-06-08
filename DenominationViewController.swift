@@ -1,14 +1,14 @@
 //
-//  ChurchMainViewController.swift
+//  DenominationViewController.swift
 //  WedeChurchIOS
 //
-//  Created by Muluken on 5/30/17.
+//  Created by Muluken on 6/7/17.
 //  Copyright © 2017 GCME. All rights reserved.
 //
 
 import UIKit
 
-class ChurchMainViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout , UISearchBarDelegate {
+class DenominationViewController:  UIViewController,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout , UISearchBarDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var menuBar: UIBarButtonItem!
     
@@ -16,31 +16,32 @@ class ChurchMainViewController: UIViewController,UICollectionViewDataSource, UIC
     
     var cellIdentifier = "denomCell"
     var numberOfItemsPerRow : Int = 2
-    var eventNames:[String]?
-    var EventImages:[String]?
+    var denominationNames:[String]?
+    var denominationLogos:[String]?
     var dataSourceForSearchResult:[String]?
     var searchBarActive:Bool = false
     var searchBarBoundsY:CGFloat?
     var refreshControl:UIRefreshControl?
     
-    // sending images to detail event view
-    var eventName: AnyObject? {
+    // sending denominationName to detail denomination Controller view
+    var denominationName: AnyObject? {
         
         get {
-            return UserDefaults.standard.object(forKey: "churchName") as AnyObject?
+            return UserDefaults.standard.object(forKey: "denominationName") as AnyObject?
         }
         set {
-            UserDefaults.standard.set(newValue!, forKey: "churchName")
+            UserDefaults.standard.set(newValue!, forKey: "denominationName")
             UserDefaults.standard.synchronize()
         }
     }
-    var eventImage: AnyObject? {
+    //sending denomination logo to detail denomination view controller
+    var denominationLogo: AnyObject? {
         
         get {
-            return UserDefaults.standard.object(forKey: "churchImage") as AnyObject?
+            return UserDefaults.standard.object(forKey: "denominationLogo") as AnyObject?
         }
         set {
-            UserDefaults.standard.set(newValue!, forKey: "churchImage")
+            UserDefaults.standard.set(newValue!, forKey: "denominationLogo")
             UserDefaults.standard.synchronize()
         }
     }
@@ -65,14 +66,14 @@ class ChurchMainViewController: UIViewController,UICollectionViewDataSource, UIC
         denominationSearchBar.delegate = self
         collectionView.dataSource = self
         collectionView.delegate = self
-        self.eventNames = ["Church1","Church1","Church1","Church1","Church1","Church1","Church1","Church1","Church1", "Church1"]
-        self.EventImages = ["app_logo","app_logo","app_logo","app_logo","app_logo", "app_logo","app_logo","app_logo", "app_logo", "app_logo", "app_logo" ,"app_logo"]
+        self.denominationNames = ["Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Church1","Beza International" , "Meserete Christos" , "Kale Hiwot" , "You Go" , "Bethel" , "Glorious"]
+        self.denominationLogos = ["profile","profile","profile","profile","profile", "profile","profile","profile", "profile", "profile", "profile" ,"profile"]
         self.dataSourceForSearchResult = [String]()
     }
     
     // MARK: Search
     func filterContentForSearchText(searchText:String){
-        self.dataSourceForSearchResult = self.eventNames?.filter({ (text:String) -> Bool in
+        self.dataSourceForSearchResult = self.denominationNames?.filter({ (text:String) -> Bool in
             return text.contains(searchText)
         })
     }
@@ -120,17 +121,16 @@ class ChurchMainViewController: UIViewController,UICollectionViewDataSource, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! ChurchCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! DenominationCollectionViewCell
         cell.indexPath = indexPath
         //  cell.topButton.backgroundColor = UIColor .blue
-        cell.layer.borderWidth = 1.0;
-        // cell.layer.borderColor = UIColor.green.cgColor
-       // cell.topLabel.textColor = UIColor.blue
-        cell.denominationImage.image = UIImage(named: (self.EventImages?[indexPath.row])!)
+        cell.layer.cornerRadius = 30.0
+        // cell.topLabel.textColor = UIColor.blue
+        cell.denominationImage.image = UIImage(named: (self.denominationLogos?[indexPath.row])!)
         if (self.searchBarActive) {
             cell.deniminationName!.text = self.dataSourceForSearchResult![indexPath.row];
         }else{
-            cell.deniminationName!.text = self.eventNames![indexPath.row];
+            cell.deniminationName!.text = self.denominationNames![indexPath.row];
         }
         return cell
     }
@@ -140,7 +140,7 @@ class ChurchMainViewController: UIViewController,UICollectionViewDataSource, UIC
         if self.searchBarActive {
             return self.dataSourceForSearchResult!.count;
         }
-        return self.eventNames!.count
+        return self.denominationNames!.count
     }
     
     
@@ -162,12 +162,10 @@ class ChurchMainViewController: UIViewController,UICollectionViewDataSource, UIC
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        eventName = eventNames? [indexPath.row] as AnyObject?
-        eventImage = EventImages? [indexPath.row] as AnyObject?
+        denominationName = denominationNames? [indexPath.row] as AnyObject?
+        denominationLogo = denominationLogos? [indexPath.row] as AnyObject?
         
         
     }
     
 }
-
-

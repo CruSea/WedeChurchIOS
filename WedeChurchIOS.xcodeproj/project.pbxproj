@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830FEBA91EE7F1770085801D /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBA81EE7F1770085801D /* EventListViewController.swift */; };
+		830FEBAD1EE7F8AB0085801D /* EventListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBAC1EE7F8AB0085801D /* EventListTableViewCell.swift */; };
+		830FEBB51EE8510A0085801D /* DenominationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBB41EE8510A0085801D /* DenominationViewController.swift */; };
+		830FEBB91EE852400085801D /* DenominationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBB81EE852400085801D /* DenominationCollectionViewCell.swift */; };
+		830FEBBB1EE858F00085801D /* ChurchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBBA1EE858F00085801D /* ChurchListTableViewCell.swift */; };
+		830FEBBD1EE8597B0085801D /* DenominationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBBC1EE8597B0085801D /* DenominationDetailView.swift */; };
 		832AC8BC1EE59C900065A5EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832AC8BB1EE59C900065A5EA /* CoreLocation.framework */; };
 		832FF3B31EC19F8100310B4F /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FF3B21EC19F8100310B4F /* EventDetailViewController.swift */; };
 		833317231EAF2CEA003DCF71 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833317211EAF2CEA003DCF71 /* WalkthroughViewController.swift */; };
@@ -29,8 +35,6 @@
 		83D71F8F1E8BDF9600D1D356 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */; };
 		83EDFF281EC08C340008CFB3 /* EventMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDFF271EC08C340008CFB3 /* EventMainViewController.swift */; };
 		83EDFF2A1EC08C500008CFB3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDFF291EC08C500008CFB3 /* CollectionViewCell.swift */; };
-		83FEAE4B1EDD5D2900646E11 /* ChurchMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEAE4A1EDD5D2900646E11 /* ChurchMainViewController.swift */; };
-		83FEAE4D1EDD5DE400646E11 /* ChurchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEAE4C1EDD5DE400646E11 /* ChurchCollectionViewCell.swift */; };
 		83FEAE4F1EDD5E3600646E11 /* ChurchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEAE4E1EDD5E3600646E11 /* ChurchDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +69,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		830FEBA81EE7F1770085801D /* EventListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		830FEBAC1EE7F8AB0085801D /* EventListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListTableViewCell.swift; sourceTree = "<group>"; };
+		830FEBB41EE8510A0085801D /* DenominationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenominationViewController.swift; sourceTree = "<group>"; };
+		830FEBB81EE852400085801D /* DenominationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenominationCollectionViewCell.swift; sourceTree = "<group>"; };
+		830FEBBA1EE858F00085801D /* ChurchListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchListTableViewCell.swift; sourceTree = "<group>"; };
+		830FEBBC1EE8597B0085801D /* DenominationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenominationDetailView.swift; sourceTree = "<group>"; };
 		832AC8BB1EE59C900065A5EA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		832FF3B21EC19F8100310B4F /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		833317211EAF2CEA003DCF71 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
@@ -95,8 +105,6 @@
 		83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		83EDFF271EC08C340008CFB3 /* EventMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMainViewController.swift; sourceTree = "<group>"; };
 		83EDFF291EC08C500008CFB3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		83FEAE4A1EDD5D2900646E11 /* ChurchMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchMainViewController.swift; sourceTree = "<group>"; };
-		83FEAE4C1EDD5DE400646E11 /* ChurchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchCollectionViewCell.swift; sourceTree = "<group>"; };
 		83FEAE4E1EDD5E3600646E11 /* ChurchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +164,7 @@
 		836235181E7DA28000F5844B = {
 			isa = PBXGroup;
 			children = (
+				83BF0EDE1EE921AC00EBD759 /* Denomination */,
 				836C32411ECA63AD00E3EA83 /* Church */,
 				83EDFF261EC08BFF0008CFB3 /* Events */,
 				833317251EAF3818003DCF71 /* Introduction */,
@@ -220,11 +229,20 @@
 		836C32411ECA63AD00E3EA83 /* Church */ = {
 			isa = PBXGroup;
 			children = (
-				83FEAE4A1EDD5D2900646E11 /* ChurchMainViewController.swift */,
-				83FEAE4C1EDD5DE400646E11 /* ChurchCollectionViewCell.swift */,
 				83FEAE4E1EDD5E3600646E11 /* ChurchDetailViewController.swift */,
+				830FEBBA1EE858F00085801D /* ChurchListTableViewCell.swift */,
 			);
 			name = Church;
+			sourceTree = "<group>";
+		};
+		83BF0EDE1EE921AC00EBD759 /* Denomination */ = {
+			isa = PBXGroup;
+			children = (
+				830FEBB41EE8510A0085801D /* DenominationViewController.swift */,
+				830FEBB81EE852400085801D /* DenominationCollectionViewCell.swift */,
+				830FEBBC1EE8597B0085801D /* DenominationDetailView.swift */,
+			);
+			name = Denomination;
 			sourceTree = "<group>";
 		};
 		83EDFF261EC08BFF0008CFB3 /* Events */ = {
@@ -233,6 +251,8 @@
 				83EDFF271EC08C340008CFB3 /* EventMainViewController.swift */,
 				83EDFF291EC08C500008CFB3 /* CollectionViewCell.swift */,
 				832FF3B21EC19F8100310B4F /* EventDetailViewController.swift */,
+				830FEBA81EE7F1770085801D /* EventListViewController.swift */,
+				830FEBAC1EE7F8AB0085801D /* EventListTableViewCell.swift */,
 			);
 			name = Events;
 			sourceTree = "<group>";
@@ -378,19 +398,23 @@
 				834FC7CE1E92EBFB00B0E0BB /* FavouriteBottomVCTableViewCell.swift in Sources */,
 				83536EC01E8D45AA003A8FC4 /* MenuCell.swift in Sources */,
 				83D71F8F1E8BDF9600D1D356 /* HomeViewController.swift in Sources */,
+				830FEBB51EE8510A0085801D /* DenominationViewController.swift in Sources */,
 				836F0C811E82B8AE0093C936 /* LoginViewController.swift in Sources */,
+				830FEBA91EE7F1770085801D /* EventListViewController.swift in Sources */,
 				83EDFF2A1EC08C500008CFB3 /* CollectionViewCell.swift in Sources */,
+				830FEBBB1EE858F00085801D /* ChurchListTableViewCell.swift in Sources */,
+				830FEBBD1EE8597B0085801D /* DenominationDetailView.swift in Sources */,
 				83536ECA1E8D4878003A8FC4 /* SWRevealViewController.m in Sources */,
 				836235271E7DA28000F5844B /* ViewController.swift in Sources */,
+				830FEBB91EE852400085801D /* DenominationCollectionViewCell.swift in Sources */,
+				830FEBAD1EE7F8AB0085801D /* EventListTableViewCell.swift in Sources */,
 				834FC7CC1E92EB8000B0E0BB /* BottomLocationVCViewController.swift in Sources */,
 				83536EBE1E8D4577003A8FC4 /* menuViewController.swift in Sources */,
 				836F0C831E82B8BC0093C936 /* SignUpViewController.swift in Sources */,
 				83FEAE4F1EDD5E3600646E11 /* ChurchDetailViewController.swift in Sources */,
-				83FEAE4D1EDD5DE400646E11 /* ChurchCollectionViewCell.swift in Sources */,
 				833317231EAF2CEA003DCF71 /* WalkthroughViewController.swift in Sources */,
 				833317241EAF2CEA003DCF71 /* PageViewController.swift in Sources */,
 				836235251E7DA28000F5844B /* AppDelegate.swift in Sources */,
-				83FEAE4B1EDD5D2900646E11 /* ChurchMainViewController.swift in Sources */,
 				832FF3B31EC19F8100310B4F /* EventDetailViewController.swift in Sources */,
 				83536ECF1E8D4DB5003A8FC4 /* EventsViewController.swift in Sources */,
 			);

@@ -14,29 +14,31 @@ class EventDetailViewController: UIViewController {
     @IBOutlet weak var detailEventView: UITextView!
     @IBOutlet weak var detaileventLabel: UILabel!
     
-    // get data eventnamesfrom event main controller
-    var labeldetail: AnyObject? {
+    var eventListName: AnyObject? {
         
         get {
-            return UserDefaults.standard.object(forKey: "eventName") as AnyObject?
+            return UserDefaults.standard.object(forKey: "eventListName") as AnyObject?
         }
         
     }
     //get imagesfrom main eventviewcntroller
-    var imageDetail: AnyObject? {
+    var eventListImage: AnyObject? {
         
         get {
-            return UserDefaults.standard.object(forKey: "eventImage") as AnyObject?
+            return UserDefaults.standard.object(forKey: "eventListImage") as AnyObject?
         }
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        detaileventLabel.text = eventListName as? String
+        detailImage.image = UIImage(named: eventListImage as! String)
+       // detailImage.layer.cornerRadius = 20.0
+        
 
-         detailEventView.text = labeldetail as? String
-        detailImage.image = UIImage(named: imageDetail as! String)
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -55,5 +57,6 @@ class EventDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }

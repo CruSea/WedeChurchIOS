@@ -9,10 +9,9 @@
 import UIKit
 
 class ChurchDetailViewController: UIViewController {
-    @IBOutlet weak var detailImage: UIImageView!
     
-    @IBOutlet weak var detailEventView: UITextView!
-    @IBOutlet weak var detaileventLabel: UILabel!
+    @IBOutlet weak var detailChurchLogo: UIImageView!
+    @IBOutlet weak var detailChurchName: UILabel!
     
     // get data eventnamesfrom event main controller
     var labeldetail: AnyObject? {
@@ -34,8 +33,8 @@ class ChurchDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        detailEventView.text = labeldetail as? String
-        detailImage.image = UIImage(named: imageDetail as! String)
+        detailChurchName.text = labeldetail as? String
+        detailChurchLogo.image = UIImage(named: imageDetail as! String)
         
         // Do any additional setup after loading the view.
     }

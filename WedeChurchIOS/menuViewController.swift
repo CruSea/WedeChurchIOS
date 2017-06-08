@@ -17,7 +17,7 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var iconArray:Array = [UIImage]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        ManuNameArray = ["Map","Churches","Events","Favorites","Profile","Settings"]
+        ManuNameArray = ["Map","Denomination","Events","Favorites","Profile","Settings"]
         iconArray = [UIImage(named:"message")!,UIImage(named:"message")!,UIImage(named:"message")!,UIImage(named:"message")!,UIImage(named:"message")!,UIImage(named:"message")!,UIImage(named:"message")!]
 //        imgProfile.layer.borderWidth = 2
 //        imgProfile.layer.cornerRadius = 50
@@ -43,7 +43,7 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         return cell
     }
-    
+    // side bar menu items
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let revealviewcontroller:SWRevealViewController = self.revealViewController()
@@ -60,11 +60,11 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
             
         }
-        if cell.lblMenuname.text! == "Churches"
+        if cell.lblMenuname.text! == "Denomination"
         {
-            print("Churches Tapped")
+            print("Denomination Tapped")
             let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "ChurchMainViewController") as! ChurchMainViewController
+            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "DenominationViewController") as! DenominationViewController
             let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
             
             revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
@@ -74,7 +74,7 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             print("Events Tapped")
             
             let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "EventMainViewController") as! EventMainViewController
+            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "EventListViewController") as! EventListViewController
             let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
             
             revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
