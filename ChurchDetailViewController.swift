@@ -75,7 +75,7 @@ class ChurchDetailViewController: UIViewController,UICollectionViewDataSource, U
         collectionView.dataSource = self
         collectionView.delegate = self
         self.churchEventNames = ["Event1","Event2","Event3","Event4","Event5","Event6","Event7","Event8","Event9", "Event10"]
-        self.churchEventImages = ["app_logo","app_logo","app_logo","app_logo","app_logo", "app_logo","app_logo","app_logo", "app_logo", "app_logo", "app_logo" ,"app_logo"]
+        self.churchEventImages = ["church","mekane","yougo","church","mekane","yougo","church","mekane","yougo", "church","mekane","yougo"]
     }
     
     

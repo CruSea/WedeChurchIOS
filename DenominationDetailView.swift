@@ -83,9 +83,9 @@ class DenominationDetailView: UIViewController, UITableViewDataSource, UITableVi
         
         
         // fill up data
-        self.denominationListImages = ["profile","profile","profile","profile","profile", "profile","profile","app_logo", "app_logo", "profile", "app_logo" ,"profile","app_logo","profile","app_logo","app_logo","app_logo", "app_logo","profile","app_logo", "profile", "app_logo", "profile" ,"app_logo","profile", "app_logo" ,"profile"]
+        self.denominationListImages = ["church","mekane","yougo","church","mekane","yougo","church","mekane","yougo", "church","mekane","yougo","church","mekane","yougo","church","mekane","yougo","church","mekane","yougo", "church","mekane","yougo"]
         self.denominationListName  = [
-            "Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Glorious","Beza International" , "Meserete Christos" , "Kale Hiwot" , "You Go" , "Bethel" , "Glorious", "Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Glorious","Beza International" , "Meserete Christos" , "Kale Hiwot" , "You Go" , "Bethel" , "Glorious","Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Glorious","Beza International" , "Meserete Christos" , "Kale Hiwot"
+            "Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Glorious","Beza International" , "Meserete Christos" , "Kale Hiwot" , "You Go" , "Bethel" , "Glorious", "Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Glorious","Beza International" , "Meserete Christos" , "Kale Hiwot" , "You Go" , "Bethel" , "Glorious","Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Glorious"
         ]
         
         // set table view delegate

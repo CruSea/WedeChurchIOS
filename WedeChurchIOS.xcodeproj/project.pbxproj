@@ -13,6 +13,7 @@
 		830FEBB91EE852400085801D /* DenominationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBB81EE852400085801D /* DenominationCollectionViewCell.swift */; };
 		830FEBBB1EE858F00085801D /* ChurchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBBA1EE858F00085801D /* ChurchListTableViewCell.swift */; };
 		830FEBBD1EE8597B0085801D /* DenominationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBBC1EE8597B0085801D /* DenominationDetailView.swift */; };
+		8310A6111EEACFF400D24555 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310A6101EEACFF400D24555 /* FavoriteViewController.swift */; };
 		832AC8BC1EE59C900065A5EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832AC8BB1EE59C900065A5EA /* CoreLocation.framework */; };
 		832FF3B31EC19F8100310B4F /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FF3B21EC19F8100310B4F /* EventDetailViewController.swift */; };
 		833317231EAF2CEA003DCF71 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833317211EAF2CEA003DCF71 /* WalkthroughViewController.swift */; };
@@ -34,6 +35,8 @@
 		836F0C831E82B8BC0093C936 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F0C821E82B8BC0093C936 /* SignUpViewController.swift */; };
 		83BF0EE01EE9391800EBD759 /* OneChurchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF0EDF1EE9391800EBD759 /* OneChurchCollectionViewCell.swift */; };
 		83BF0EE21EE9429D00EBD759 /* OneChurchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF0EE11EE9429D00EBD759 /* OneChurchDetailViewController.swift */; };
+		83BF0EE61EE95FDC00EBD759 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF0EE51EE95FDC00EBD759 /* FavoritesViewController.swift */; };
+		83BF0EE81EE963B700EBD759 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF0EE71EE963B700EBD759 /* FavoritesTableViewCell.swift */; };
 		83D71F8F1E8BDF9600D1D356 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */; };
 		83EDFF281EC08C340008CFB3 /* EventMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDFF271EC08C340008CFB3 /* EventMainViewController.swift */; };
 		83EDFF2A1EC08C500008CFB3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDFF291EC08C500008CFB3 /* CollectionViewCell.swift */; };
@@ -77,6 +80,7 @@
 		830FEBB81EE852400085801D /* DenominationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenominationCollectionViewCell.swift; sourceTree = "<group>"; };
 		830FEBBA1EE858F00085801D /* ChurchListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchListTableViewCell.swift; sourceTree = "<group>"; };
 		830FEBBC1EE8597B0085801D /* DenominationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenominationDetailView.swift; sourceTree = "<group>"; };
+		8310A6101EEACFF400D24555 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		832AC8BB1EE59C900065A5EA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		832FF3B21EC19F8100310B4F /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		833317211EAF2CEA003DCF71 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 		836F0C821E82B8BC0093C936 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		83BF0EDF1EE9391800EBD759 /* OneChurchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneChurchCollectionViewCell.swift; sourceTree = "<group>"; };
 		83BF0EE11EE9429D00EBD759 /* OneChurchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneChurchDetailViewController.swift; sourceTree = "<group>"; };
+		83BF0EE51EE95FDC00EBD759 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		83BF0EE71EE963B700EBD759 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		83EDFF271EC08C340008CFB3 /* EventMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMainViewController.swift; sourceTree = "<group>"; };
 		83EDFF291EC08C500008CFB3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -168,12 +174,12 @@
 		836235181E7DA28000F5844B = {
 			isa = PBXGroup;
 			children = (
+				83BF0EE41EE95FC800EBD759 /* Favorites */,
+				83BF0EE31EE95F8900EBD759 /* HomeBottomSheet */,
 				83BF0EDE1EE921AC00EBD759 /* Denomination */,
 				836C32411ECA63AD00E3EA83 /* Church */,
 				83EDFF261EC08BFF0008CFB3 /* Events */,
 				833317251EAF3818003DCF71 /* Introduction */,
-				834FC7CD1E92EBFB00B0E0BB /* FavouriteBottomVCTableViewCell.swift */,
-				834FC7CB1E92EB8000B0E0BB /* BottomLocationVCViewController.swift */,
 				83536ECD1E8D4BD3003A8FC4 /* SWController */,
 				836235231E7DA28000F5844B /* WedeChurchIOS */,
 				836235381E7DA28100F5844B /* WedeChurchIOSTests */,
@@ -249,6 +255,25 @@
 				830FEBBC1EE8597B0085801D /* DenominationDetailView.swift */,
 			);
 			name = Denomination;
+			sourceTree = "<group>";
+		};
+		83BF0EE31EE95F8900EBD759 /* HomeBottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				834FC7CD1E92EBFB00B0E0BB /* FavouriteBottomVCTableViewCell.swift */,
+				834FC7CB1E92EB8000B0E0BB /* BottomLocationVCViewController.swift */,
+			);
+			name = HomeBottomSheet;
+			sourceTree = "<group>";
+		};
+		83BF0EE41EE95FC800EBD759 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				83BF0EE51EE95FDC00EBD759 /* FavoritesViewController.swift */,
+				83BF0EE71EE963B700EBD759 /* FavoritesTableViewCell.swift */,
+				8310A6101EEACFF400D24555 /* FavoriteViewController.swift */,
+			);
+			name = Favorites;
 			sourceTree = "<group>";
 		};
 		83EDFF261EC08BFF0008CFB3 /* Events */ = {
@@ -400,6 +425,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83BF0EE61EE95FDC00EBD759 /* FavoritesViewController.swift in Sources */,
+				83BF0EE81EE963B700EBD759 /* FavoritesTableViewCell.swift in Sources */,
 				83EDFF281EC08C340008CFB3 /* EventMainViewController.swift in Sources */,
 				83BF0EE21EE9429D00EBD759 /* OneChurchDetailViewController.swift in Sources */,
 				834FC7CE1E92EBFB00B0E0BB /* FavouriteBottomVCTableViewCell.swift in Sources */,
@@ -408,6 +435,7 @@
 				830FEBB51EE8510A0085801D /* DenominationViewController.swift in Sources */,
 				836F0C811E82B8AE0093C936 /* LoginViewController.swift in Sources */,
 				83BF0EE01EE9391800EBD759 /* OneChurchCollectionViewCell.swift in Sources */,
+				8310A6111EEACFF400D24555 /* FavoriteViewController.swift in Sources */,
 				830FEBA91EE7F1770085801D /* EventListViewController.swift in Sources */,
 				83EDFF2A1EC08C500008CFB3 /* CollectionViewCell.swift in Sources */,
 				830FEBBB1EE858F00085801D /* ChurchListTableViewCell.swift in Sources */,

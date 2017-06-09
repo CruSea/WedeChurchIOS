@@ -67,7 +67,7 @@ class DenominationViewController:  UIViewController,UICollectionViewDataSource, 
         collectionView.dataSource = self
         collectionView.delegate = self
         self.denominationNames = ["Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Church1","Beza International" , "Meserete Christos" , "Kale Hiwot" , "You Go" , "Bethel" , "Glorious"]
-        self.denominationLogos = ["profile","profile","profile","profile","profile", "profile","profile","profile", "profile", "profile", "profile" ,"profile"]
+        self.denominationLogos = ["church","mekane","yougo","church","mekane","yougo","church","mekane","yougo", "church","mekane","yougo"]
         self.dataSourceForSearchResult = [String]()
     }
     

@@ -65,9 +65,9 @@ class EventListViewController: UIViewController, UITableViewDataSource, UITableV
         
         
         // fill up data
-        self.eventListImages = ["profile","profile","profile","profile","profile", "profile","profile","app_logo", "app_logo", "profile", "app_logo" ,"profile","app_logo","profile","app_logo","app_logo","app_logo", "app_logo","profile","app_logo", "profile", "app_logo", "profile" ,"app_logo","profile", "app_logo" ,"profile"]
+        self.eventListImages = ["church","mekane","yougo","church","mekane","yougo","church","mekane","yougo", "church","mekane","yougo","church","mekane","yougo","church","mekane","yougo","church","mekane","yougo", "church","mekane","yougo"]
         self.eventListName  = [
-            "Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Glorious","Beza International" , "Meserete Christos" , "Kale Hiwot" , "You Go" , "Bethel" , "Glorious", "Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Glorious","Beza International" , "Meserete Christos" , "Kale Hiwot" , "You Go" , "Bethel" , "Glorious","Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Glorious","Beza International" , "Meserete Christos" , "Kale Hiwot"        ]
+            "Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Glorious","Beza International" , "Meserete Christos" , "Kale Hiwot" , "You Go" , "Bethel" , "Glorious", "Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Glorious","Beza International" , "Meserete Christos" , "Kale Hiwot" , "You Go" , "Bethel" , "Glorious","Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan" , "Glorious"       ]
         
         // set table view delegate
         self.myTableView.dataSource = self

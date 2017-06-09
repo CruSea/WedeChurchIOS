@@ -21,7 +21,8 @@ class BottomLocationVCViewController: UIViewController {
     var partialView: CGFloat {
         return UIScreen.main.bounds.height - 150
     }
-    var fullView: CGFloat = 150
+    var fullView: CGFloat = 100
+    var fullViewStart: CGFloat = 400
     
     let Churches:[String] = ["Mekane Yesus","Hiwot birhan", "MKC"]
     let Events:[String] = ["Yu go wroshp","bez prayer", "glorioous ruins"]
@@ -94,7 +95,7 @@ extension BottomLocationVCViewController:UIGestureRecognizerDelegate{
     //MARK:- Animate afterViewWill Appear
     func animateAfterViewAppear(){
         UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.8, options: .curveLinear, animations: {
-            self.view.frame = CGRect(x: 0, y: self.fullView, width: self.view.frame.width, height: self.view.frame.height)
+            self.view.frame = CGRect(x: 0, y: self.fullViewStart, width: self.view.frame.width, height: self.view.frame.height)
         }, completion: nil)
     }
     
