@@ -402,11 +402,15 @@
                         <constraints>
                             <constraint firstItem="Ud6-fI-scC" firstAttribute="leading" secondItem="LVJ-nD-JTg" secondAttribute="leading" id="7pR-xv-70z"/>
                             <constraint firstItem="Ud6-fI-scC" firstAttribute="top" secondItem="LVJ-nD-JTg" secondAttribute="top" id="Aut-dt-F4y"/>
+                            <constraint firstItem="Ud6-fI-scC" firstAttribute="top" secondItem="LVJ-nD-JTg" secondAttribute="top" id="FSB-Hz-76c"/>
                             <constraint firstAttribute="trailing" secondItem="Ud6-fI-scC" secondAttribute="trailing" id="Ix8-bZ-heb"/>
                             <constraint firstItem="yVB-7B-bFh" firstAttribute="bottom" secondItem="GW5-K0-rr1" secondAttribute="top" id="KGS-y1-ECT"/>
+                            <constraint firstItem="yVB-7B-bFh" firstAttribute="top" secondItem="Ud6-fI-scC" secondAttribute="bottom" id="QbM-kH-tf7"/>
                             <constraint firstAttribute="trailing" secondItem="yVB-7B-bFh" secondAttribute="trailing" id="c8z-cB-SjV"/>
                             <constraint firstItem="yVB-7B-bFh" firstAttribute="leading" secondItem="LVJ-nD-JTg" secondAttribute="leading" id="dXU-iP-HQt"/>
+                            <constraint firstItem="Ud6-fI-scC" firstAttribute="leading" secondItem="LVJ-nD-JTg" secondAttribute="leading" id="eTR-4n-oV1"/>
                             <constraint firstItem="yVB-7B-bFh" firstAttribute="top" secondItem="Ud6-fI-scC" secondAttribute="bottom" id="fFE-0l-1yA"/>
+                            <constraint firstAttribute="trailing" secondItem="Ud6-fI-scC" secondAttribute="trailing" id="hoh-uz-anG"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1340,7 +1344,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="favChurchesCell" rowHeight="101" id="jWz-4q-nED" customClass="FavChurchesTableViewCell" customModule="WedeChurchIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="churcheCell" rowHeight="101" id="jWz-4q-nED" customClass="FavChurchesTableViewCell" customModule="WedeChurchIOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jWz-4q-nED" id="awW-kt-yeo">
@@ -1405,7 +1409,8 @@
                         <barButtonItem key="leftBarButtonItem" image="menu" id="tB6-PJ-12h"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="churchTableView" destination="gKc-WM-hCJ" id="6rU-lk-zdr"/>
+                        <outlet property="churchTableView" destination="gKc-WM-hCJ" id="hTF-sp-7en"/>
+                        <outlet property="menuBar" destination="tB6-PJ-12h" id="h3K-pf-b2c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="296-vE-oYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1447,7 +1452,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="favChurchCell" rowHeight="98" id="7Qe-65-BKz" customClass="FavEventTableViewCell" customModule="WedeChurchIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="eventCell" rowHeight="98" id="7Qe-65-BKz" customClass="FavEventTableViewCell" customModule="WedeChurchIOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Qe-65-BKz" id="blD-ek-ezx">

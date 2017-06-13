@@ -50,7 +50,7 @@ class FavoriteEventViewController: UIViewController, UITableViewDataSource ,UITa
         return eventImages.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let myCell = favEventTableView.dequeueReusableCell(withIdentifier: "favChurchCell", for: indexPath) as! FavEventTableViewCell
+        let myCell = favEventTableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! FavEventTableViewCell
         myCell.eventImage.image = UIImage(named: eventImages[indexPath.row])!
         myCell.eventTitle.text = eventString[indexPath.row]
         
