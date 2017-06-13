@@ -16,11 +16,18 @@ class FavoriteViewController: UIViewController, UITableViewDataSource ,UITableVi
      favTabelView.reloadData()
     }
     
+    @IBOutlet weak var menu: UIBarButtonItem!
     let eventString: [String] = ["one", "two", "three", "four"]
     let churchString: [String] = ["churhcone", "church two", "church three","church four"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if revealViewController() != nil {
+            
+            menu.target = revealViewController()
+            menu.action = #selector(SWRevealViewController.revealToggle(_:))
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+        }
         // Do any additional setup after loading the view.
     }
 

@@ -84,7 +84,7 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         {
             print("Favorites Tapped")
             let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "FavoriteViewController") as! FavoriteViewController
+            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "FavoritesTabController") as! FavoritesTabController
             let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
             
             revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
