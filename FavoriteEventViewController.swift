@@ -14,18 +14,42 @@ class FavoriteEventViewController: UIViewController, UITableViewDataSource ,UITa
     
     
     
-    @IBOutlet weak var menuBar: UIBarButtonItem!
+   // @IBOutlet weak var menuBar: UIBarButtonItem!
+   //send files to detailview
+    var sendFavNameEvents: AnyObject? {
+        
+        get {
+            return UserDefaults.standard.object(forKey: "favEventName") as AnyObject?
+        }
+        set {
+            UserDefaults.standard.set(newValue!, forKey: "favEventName")
+            UserDefaults.standard.synchronize()
+        }
+    }
+    var sendFavImageEvent: AnyObject? {
+        
+        get {
+            return UserDefaults.standard.object(forKey: "favEventImage") as AnyObject?
+        }
+        set {
+            UserDefaults.standard.set(newValue!, forKey: "favEventImage")
+            UserDefaults.standard.synchronize()
+        }
+    }
+
+    
+    
     let eventString = ["one", "two", "three", "four"]
     let eventImages = ["yougo", "yougo", "yougo","yougo"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        if revealViewController() != nil {
-            
-            menuBar.target = revealViewController()
-            menuBar.action = #selector(SWRevealViewController.revealToggle(_:))
-            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            
-        }
+//        if revealViewController() != nil {
+//            
+//            menuBar.target = revealViewController()
+//            menuBar.action = #selector(SWRevealViewController.revealToggle(_:))
+//            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//            
+//        }
         // Do any additional setup after loading the view.
     }
     
@@ -56,5 +80,12 @@ class FavoriteEventViewController: UIViewController, UITableViewDataSource ,UITa
         
         return myCell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        sendFavNameEvents = eventString[indexPath.row] as AnyObject?
+        sendFavImageEvent = eventImages[indexPath.row] as AnyObject?
+        
+        
+        
+    }
 }

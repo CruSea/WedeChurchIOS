@@ -177,8 +177,8 @@ class EventListViewController: UIViewController, UITableViewDataSource, UITableV
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-            nameEvent = eventListName [indexPath.row] as AnyObject?
-            imageEvent = eventListImages [indexPath.row] as AnyObject?
+            nameEvent = eventListName[indexPath.row] as AnyObject?
+            imageEvent = eventListImages[indexPath.row] as AnyObject?
             
             
         

@@ -9,10 +9,20 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    @IBOutlet weak var menuButton: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // navigation drawer in menu bars
+        if revealViewController() != nil {
+            
+            menuButton.target = revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+        }
+        
         // Do any additional setup after loading the view.
     }
 
