@@ -18,9 +18,11 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     // location managerer declaration
     var manager = CLLocationManager()
     
-    @IBAction func findMe(_ sender: Any) {
-     manager.startUpdatingLocation()
+    @IBAction func findMyLocation(_ sender: Any) {
+        manager.startUpdatingLocation()
+
     }
+
     //finding users current location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {

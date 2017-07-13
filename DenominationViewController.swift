@@ -124,7 +124,6 @@ class DenominationViewController:  UIViewController,UICollectionViewDataSource, 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! DenominationCollectionViewCell
         cell.indexPath = indexPath
         //  cell.topButton.backgroundColor = UIColor .blue
-        cell.layer.cornerRadius = 30.0
         // cell.topLabel.textColor = UIColor.blue
         cell.denominationImage.image = UIImage(named: (self.denominationLogos?[indexPath.row])!)
         if (self.searchBarActive) {

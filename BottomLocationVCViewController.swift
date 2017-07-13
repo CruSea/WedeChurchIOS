@@ -11,77 +11,93 @@ import MapKit
 
 class BottomLocationVCViewController: UIViewController {
     
-    @IBOutlet weak var mySegmentControl: UISegmentedControl!
-    @IBAction func btnSegment(_ sender: Any) {
-        tblView.reloadData()
-
-    }
-   // @IBOutlet weak var tableViewBottomConstraint: NSLayoutConstraint!
-    @IBOutlet weak var tblView: UITableView!
     var partialView: CGFloat {
         return UIScreen.main.bounds.height - 150
     }
-    var fullView: CGFloat = 100
-    var fullViewStart: CGFloat = 400
+    var fullView: CGFloat = 150
     
-    let Churches:[String] = ["Mekane Yesus","Hiwot birhan", "MKC"]
-    let Events:[String] = ["Yu go wroshp","bez prayer", "glorioous ruins"]
+    @IBOutlet weak var contentView: UIView!
+    enum TabIndex : Int {
+        case firstChildTab = 0
+        case secondChildTab = 1
+    }
+    
+    @IBOutlet weak var segmentedControl: TabySegmentedControl!
+    
+    var currentViewController: UIViewController?
+    lazy var firstChildTabVC: UIViewController? = {
+        let firstChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "ChurchesControllerID")
+        return firstChildTabVC
+    }()
+    lazy var secondChildTabVC : UIViewController? = {
+        let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "EventsControllerID")
+        
+        return secondChildTabVC
+    }()
+    
+    
+    
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addGestureForBottomAnimation()
+        let titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, for: .selected)
+        segmentedControl.initUI()
+        segmentedControl.selectedSegmentIndex = TabIndex.firstChildTab.rawValue
+        displayCurrentTab(TabIndex.firstChildTab.rawValue)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.tblView.tableFooterView = UIView()
-        tblView.reloadData()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         animateAfterViewAppear()
     }
-}
-//MARK:- Table View Datasource and delegate
-extension BottomLocationVCViewController : UITableViewDataSource , UITableViewDelegate{
-    
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-       
-        var returnValue = 0
-        switch (mySegmentControl.selectedSegmentIndex) {
-        case 0:
-            returnValue = Churches.count
-            break
-        case 1:
-            returnValue = Events.count
-            break
-        default:
-            break
-            
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if let currentViewController = currentViewController {
+            currentViewController.viewWillDisappear(animated)
         }
-        return returnValue
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    @IBAction func switchTabs(_ sender: UISegmentedControl) {
+        self.currentViewController!.view.removeFromSuperview()
+        self.currentViewController!.removeFromParentViewController()
         
-        let cell = self.tblView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath as IndexPath) as? FavouriteBottomVCTableViewCell
-        switch (mySegmentControl.selectedSegmentIndex) {
-        case 0:
-            cell?.contents?.text = Churches[indexPath.row]
-            break
-        case 1:
-            cell?.contents?.text = Events[indexPath.row]
-            break
-        default:
-            break
-            
-        }
-
-        return cell!
+        displayCurrentTab(sender.selectedSegmentIndex)
     }
+
+    func displayCurrentTab(_ tabIndex: Int){
+        if let vc = viewControllerForSelectedSegmentIndex(tabIndex) {
+            
+            self.addChildViewController(vc)
+            vc.didMove(toParentViewController: self)
+            
+            vc.view.frame = self.contentView.bounds
+            self.contentView.addSubview(vc.view)
+            self.currentViewController = vc
+        }
+    }
+    
+    func viewControllerForSelectedSegmentIndex(_ index: Int) -> UIViewController? {
+        var vc: UIViewController?
+        switch index {
+        case TabIndex.firstChildTab.rawValue :
+            vc = firstChildTabVC
+        case TabIndex.secondChildTab.rawValue :
+            vc = secondChildTabVC
+        default:
+            return nil
+        }
+        
+        return vc
+    }
+    
 }
 
 extension BottomLocationVCViewController:UIGestureRecognizerDelegate{
@@ -95,7 +111,7 @@ extension BottomLocationVCViewController:UIGestureRecognizerDelegate{
     //MARK:- Animate afterViewWill Appear
     func animateAfterViewAppear(){
         UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.8, options: .curveLinear, animations: {
-            self.view.frame = CGRect(x: 0, y: self.fullViewStart, width: self.view.frame.width, height: self.view.frame.height)
+            self.view.frame = CGRect(x: 0, y: self.fullView, width: self.view.frame.width, height: self.view.frame.height)
         }, completion: nil)
     }
     
@@ -122,25 +138,10 @@ extension BottomLocationVCViewController:UIGestureRecognizerDelegate{
                     self.view.frame = CGRect(x: 0, y: self.fullView, width: self.view.frame.width, height: self.view.frame.height)
                 }
                 
-            }, completion: { [weak self] _ in
-                if ( velocity.y < 0 ) {
-                    self?.tblView.isScrollEnabled = true
-                }
-            })
+            }, completion: nil)
         }
     }
     
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool{
-        let gesture = (gestureRecognizer as! UIPanGestureRecognizer)
-        let direction = gesture.velocity(in: view).y
-        let y = view.frame.minY
-        if (y == fullView && tblView.contentOffset.y == 0 && direction > 0) || (y == partialView) {
-            self.tblView.isScrollEnabled = false
-        } else {
-            self.tblView.isScrollEnabled = true
-        }
-        
-        return false
-    }
+    
 }
 

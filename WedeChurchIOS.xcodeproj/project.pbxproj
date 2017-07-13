@@ -14,6 +14,7 @@
 		830FEBBB1EE858F00085801D /* ChurchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBBA1EE858F00085801D /* ChurchListTableViewCell.swift */; };
 		830FEBBD1EE8597B0085801D /* DenominationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBBC1EE8597B0085801D /* DenominationDetailView.swift */; };
 		8310A6111EEACFF400D24555 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310A6101EEACFF400D24555 /* FavoriteViewController.swift */; };
+		831C96F11F1515F800931257 /* MapTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C96F01F1515F800931257 /* MapTypeViewController.swift */; };
 		831CBCE11EFB7624004369A2 /* FavDetailEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831CBCE01EFB7624004369A2 /* FavDetailEventVC.swift */; };
 		832179B91EFFA7F800FCB6B3 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832179B81EFFA7F800FCB6B3 /* CircleView.swift */; };
 		832179BB1EFFA80200FCB6B3 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832179BA1EFFA80200FCB6B3 /* FancyView.swift */; };
@@ -26,6 +27,10 @@
 		8321D8071EFBA4E3002AE1B7 /* FavChurcheTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321D8061EFBA4E3002AE1B7 /* FavChurcheTableViewController.swift */; };
 		8321D8091EFBB3DF002AE1B7 /* FavChurchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321D8081EFBB3DF002AE1B7 /* FavChurchVC.swift */; };
 		832AC8BC1EE59C900065A5EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832AC8BB1EE59C900065A5EA /* CoreLocation.framework */; };
+		832D4C961F164E5E009A7BDD /* HomeChurchesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D4C921F164E5E009A7BDD /* HomeChurchesTableVC.swift */; };
+		832D4C971F164E5E009A7BDD /* HomeEventsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D4C931F164E5E009A7BDD /* HomeEventsTableVC.swift */; };
+		832D4C981F164E5E009A7BDD /* HomeChurchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D4C941F164E5E009A7BDD /* HomeChurchesTableViewCell.swift */; };
+		832D4C991F164E5E009A7BDD /* HomeEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D4C951F164E5E009A7BDD /* HomeEventsTableViewCell.swift */; };
 		832FF3B31EC19F8100310B4F /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FF3B21EC19F8100310B4F /* EventDetailViewController.swift */; };
 		833317231EAF2CEA003DCF71 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833317211EAF2CEA003DCF71 /* WalkthroughViewController.swift */; };
 		833317241EAF2CEA003DCF71 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833317221EAF2CEA003DCF71 /* PageViewController.swift */; };
@@ -44,6 +49,8 @@
 		836235451E7DA28100F5844B /* WedeChurchIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836235441E7DA28100F5844B /* WedeChurchIOSUITests.swift */; };
 		836F0C811E82B8AE0093C936 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F0C801E82B8AE0093C936 /* LoginViewController.swift */; };
 		836F0C831E82B8BC0093C936 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836F0C821E82B8BC0093C936 /* SignUpViewController.swift */; };
+		83A6453B1F002DB200F7A761 /* TabySegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A645391F002DB200F7A761 /* TabySegmentedControl.swift */; };
+		83A6453C1F002DB200F7A761 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6453A1F002DB200F7A761 /* ParentViewController.swift */; };
 		83AB27A61EF019B600A39620 /* FavoritesTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB27A51EF019B600A39620 /* FavoritesTabController.swift */; };
 		83AB27AA1EF0344600A39620 /* FavoriteEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB27A91EF0344600A39620 /* FavoriteEventViewController.swift */; };
 		83AB27AC1EF0345800A39620 /* FavoriteHomeChurchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB27AB1EF0345800A39620 /* FavoriteHomeChurchViewController.swift */; };
@@ -100,6 +107,7 @@
 		830FEBBA1EE858F00085801D /* ChurchListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchListTableViewCell.swift; sourceTree = "<group>"; };
 		830FEBBC1EE8597B0085801D /* DenominationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenominationDetailView.swift; sourceTree = "<group>"; };
 		8310A6101EEACFF400D24555 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		831C96F01F1515F800931257 /* MapTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTypeViewController.swift; sourceTree = "<group>"; };
 		831CBCE01EFB7624004369A2 /* FavDetailEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavDetailEventVC.swift; sourceTree = "<group>"; };
 		832179B81EFFA7F800FCB6B3 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		832179BA1EFFA80200FCB6B3 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
@@ -112,6 +120,10 @@
 		8321D8061EFBA4E3002AE1B7 /* FavChurcheTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavChurcheTableViewController.swift; sourceTree = "<group>"; };
 		8321D8081EFBB3DF002AE1B7 /* FavChurchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavChurchVC.swift; sourceTree = "<group>"; };
 		832AC8BB1EE59C900065A5EA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		832D4C921F164E5E009A7BDD /* HomeChurchesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeChurchesTableVC.swift; sourceTree = "<group>"; };
+		832D4C931F164E5E009A7BDD /* HomeEventsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEventsTableVC.swift; sourceTree = "<group>"; };
+		832D4C941F164E5E009A7BDD /* HomeChurchesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeChurchesTableViewCell.swift; sourceTree = "<group>"; };
+		832D4C951F164E5E009A7BDD /* HomeEventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEventsTableViewCell.swift; sourceTree = "<group>"; };
 		832FF3B21EC19F8100310B4F /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		833317211EAF2CEA003DCF71 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		833317221EAF2CEA003DCF71 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +150,8 @@
 		836235461E7DA28100F5844B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836F0C801E82B8AE0093C936 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		836F0C821E82B8BC0093C936 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		83A645391F002DB200F7A761 /* TabySegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabySegmentedControl.swift; sourceTree = "<group>"; };
+		83A6453A1F002DB200F7A761 /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		83AB27A51EF019B600A39620 /* FavoritesTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTabController.swift; sourceTree = "<group>"; };
 		83AB27A91EF0344600A39620 /* FavoriteEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteEventViewController.swift; sourceTree = "<group>"; };
 		83AB27AB1EF0345800A39620 /* FavoriteHomeChurchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteHomeChurchViewController.swift; sourceTree = "<group>"; };
@@ -150,7 +164,7 @@
 		83BF0EE11EE9429D00EBD759 /* OneChurchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneChurchDetailViewController.swift; sourceTree = "<group>"; };
 		83BF0EE51EE95FDC00EBD759 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		83BF0EE71EE963B700EBD759 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
-		83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = WedeChurchIOS/HomeViewController.swift; sourceTree = "<group>"; };
 		83EDFF271EC08C340008CFB3 /* EventMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMainViewController.swift; sourceTree = "<group>"; };
 		83EDFF291EC08C500008CFB3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		83FEAE4E1EDD5E3600646E11 /* ChurchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchDetailViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +196,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		831C96EF1F1515B700931257 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */,
+				831C96F01F1515F800931257 /* MapTypeViewController.swift */,
+				832D4C921F164E5E009A7BDD /* HomeChurchesTableVC.swift */,
+				832D4C931F164E5E009A7BDD /* HomeEventsTableVC.swift */,
+				832D4C941F164E5E009A7BDD /* HomeChurchesTableViewCell.swift */,
+				832D4C951F164E5E009A7BDD /* HomeEventsTableViewCell.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		832179C01EFFA80F00FCB6B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +251,7 @@
 		836235181E7DA28000F5844B = {
 			isa = PBXGroup;
 			children = (
+				831C96EF1F1515B700931257 /* Home */,
 				832179C01EFFA80F00FCB6B3 /* View */,
 				83ACCFD21EEFCA96001F9196 /* SettingViewController.swift */,
 				83ACCFD01EEFCA6B001F9196 /* ProfileViewController.swift */,
@@ -263,7 +291,6 @@
 				836235301E7DA28100F5844B /* Info.plist */,
 				836F0C801E82B8AE0093C936 /* LoginViewController.swift */,
 				836F0C821E82B8BC0093C936 /* SignUpViewController.swift */,
-				83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */,
 				83536EBD1E8D4577003A8FC4 /* menuViewController.swift */,
 				83536EBF1E8D45AA003A8FC4 /* MenuCell.swift */,
 				83536ECE1E8D4DB5003A8FC4 /* EventsViewController.swift */,
@@ -345,6 +372,8 @@
 		83BF0EE31EE95F8900EBD759 /* HomeBottomSheet */ = {
 			isa = PBXGroup;
 			children = (
+				83A645391F002DB200F7A761 /* TabySegmentedControl.swift */,
+				83A6453A1F002DB200F7A761 /* ParentViewController.swift */,
 				834FC7CD1E92EBFB00B0E0BB /* FavouriteBottomVCTableViewCell.swift */,
 				834FC7CB1E92EB8000B0E0BB /* BottomLocationVCViewController.swift */,
 			);
@@ -519,6 +548,7 @@
 				83AB27B31EF07F2B00A39620 /* FavChurchesTableViewCell.swift in Sources */,
 				83EDFF281EC08C340008CFB3 /* EventMainViewController.swift in Sources */,
 				83BF0EE21EE9429D00EBD759 /* OneChurchDetailViewController.swift in Sources */,
+				832D4C991F164E5E009A7BDD /* HomeEventsTableViewCell.swift in Sources */,
 				834FC7CE1E92EBFB00B0E0BB /* FavouriteBottomVCTableViewCell.swift in Sources */,
 				832179BE1EFFA80C00FCB6B3 /* RoundBtn.swift in Sources */,
 				832179BB1EFFA80200FCB6B3 /* FancyView.swift in Sources */,
@@ -532,13 +562,17 @@
 				83D71F8F1E8BDF9600D1D356 /* HomeViewController.swift in Sources */,
 				831CBCE11EFB7624004369A2 /* FavDetailEventVC.swift in Sources */,
 				830FEBB51EE8510A0085801D /* DenominationViewController.swift in Sources */,
+				83A6453B1F002DB200F7A761 /* TabySegmentedControl.swift in Sources */,
 				836F0C811E82B8AE0093C936 /* LoginViewController.swift in Sources */,
 				8321D8091EFBB3DF002AE1B7 /* FavChurchVC.swift in Sources */,
 				83BF0EE01EE9391800EBD759 /* OneChurchCollectionViewCell.swift in Sources */,
 				832179B91EFFA7F800FCB6B3 /* CircleView.swift in Sources */,
 				8310A6111EEACFF400D24555 /* FavoriteViewController.swift in Sources */,
+				832D4C981F164E5E009A7BDD /* HomeChurchesTableViewCell.swift in Sources */,
+				83A6453C1F002DB200F7A761 /* ParentViewController.swift in Sources */,
 				830FEBA91EE7F1770085801D /* EventListViewController.swift in Sources */,
 				832179C21EFFA83E00FCB6B3 /* Constants.swift in Sources */,
+				831C96F11F1515F800931257 /* MapTypeViewController.swift in Sources */,
 				83EDFF2A1EC08C500008CFB3 /* CollectionViewCell.swift in Sources */,
 				832179C41EFFC13200FCB6B3 /* MyChurchCollectionViewCell.swift in Sources */,
 				83ACCFD11EEFCA6B001F9196 /* ProfileViewController.swift in Sources */,
@@ -549,6 +583,7 @@
 				836235271E7DA28000F5844B /* ViewController.swift in Sources */,
 				830FEBB91EE852400085801D /* DenominationCollectionViewCell.swift in Sources */,
 				830FEBAD1EE7F8AB0085801D /* EventListTableViewCell.swift in Sources */,
+				832D4C961F164E5E009A7BDD /* HomeChurchesTableVC.swift in Sources */,
 				834FC7CC1E92EB8000B0E0BB /* BottomLocationVCViewController.swift in Sources */,
 				83536EBE1E8D4577003A8FC4 /* menuViewController.swift in Sources */,
 				83AB27AC1EF0345800A39620 /* FavoriteHomeChurchViewController.swift in Sources */,
@@ -559,6 +594,7 @@
 				833317241EAF2CEA003DCF71 /* PageViewController.swift in Sources */,
 				836235251E7DA28000F5844B /* AppDelegate.swift in Sources */,
 				8321D8071EFBA4E3002AE1B7 /* FavChurcheTableViewController.swift in Sources */,
+				832D4C971F164E5E009A7BDD /* HomeEventsTableVC.swift in Sources */,
 				832FF3B31EC19F8100310B4F /* EventDetailViewController.swift in Sources */,
 				83536ECF1E8D4DB5003A8FC4 /* EventsViewController.swift in Sources */,
 			);
