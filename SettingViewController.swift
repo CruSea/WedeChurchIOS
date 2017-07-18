@@ -10,9 +10,17 @@ import UIKit
 
 class SettingViewController: UIViewController {
 
+    @IBOutlet weak var menuBar: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if revealViewController() != nil {
+            
+            menuBar.target = revealViewController()
+            menuBar.action = #selector(SWRevealViewController.revealToggle(_:))
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+        }
         // Do any additional setup after loading the view.
     }
 

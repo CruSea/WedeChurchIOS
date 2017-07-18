@@ -137,7 +137,7 @@ class DenominationDetailView: UIViewController, UITableViewDataSource, UITableVi
         
         //cell.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 1.0])
         // cell.layer.masksToBounds = false
-        cell.layer.cornerRadius = 15.0
+       // cell.layer.cornerRadius = 15.0
         
         //            cell.layer.shadowOffset = CGSize(width: -1, height: 1)
         //            cell.layer.shadowOpacity = 0.5

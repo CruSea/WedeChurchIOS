@@ -196,17 +196,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		831C96EF1F1515B700931257 /* Home */ = {
+		831C96EF1F1515B700931257 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
 				83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */,
 				831C96F01F1515F800931257 /* MapTypeViewController.swift */,
-				832D4C921F164E5E009A7BDD /* HomeChurchesTableVC.swift */,
-				832D4C931F164E5E009A7BDD /* HomeEventsTableVC.swift */,
-				832D4C941F164E5E009A7BDD /* HomeChurchesTableViewCell.swift */,
-				832D4C951F164E5E009A7BDD /* HomeEventsTableViewCell.swift */,
+				83D6E88C1F1D60ED004A15DA /* HomePageChurches */,
+				83D6E88B1F1D60D3004A15DA /* HomePageEvents */,
 			);
-			name = Home;
+			name = HomePage;
 			sourceTree = "<group>";
 		};
 		832179C01EFFA80F00FCB6B3 /* View */ = {
@@ -251,7 +249,7 @@
 		836235181E7DA28000F5844B = {
 			isa = PBXGroup;
 			children = (
-				831C96EF1F1515B700931257 /* Home */,
+				831C96EF1F1515B700931257 /* HomePage */,
 				832179C01EFFA80F00FCB6B3 /* View */,
 				83ACCFD21EEFCA96001F9196 /* SettingViewController.swift */,
 				83ACCFD01EEFCA6B001F9196 /* ProfileViewController.swift */,
@@ -392,6 +390,24 @@
 				83AB27A51EF019B600A39620 /* FavoritesTabController.swift */,
 			);
 			name = Favorites;
+			sourceTree = "<group>";
+		};
+		83D6E88B1F1D60D3004A15DA /* HomePageEvents */ = {
+			isa = PBXGroup;
+			children = (
+				832D4C931F164E5E009A7BDD /* HomeEventsTableVC.swift */,
+				832D4C951F164E5E009A7BDD /* HomeEventsTableViewCell.swift */,
+			);
+			name = HomePageEvents;
+			sourceTree = "<group>";
+		};
+		83D6E88C1F1D60ED004A15DA /* HomePageChurches */ = {
+			isa = PBXGroup;
+			children = (
+				832D4C921F164E5E009A7BDD /* HomeChurchesTableVC.swift */,
+				832D4C941F164E5E009A7BDD /* HomeChurchesTableViewCell.swift */,
+			);
+			name = HomePageChurches;
 			sourceTree = "<group>";
 		};
 		83EDFF261EC08BFF0008CFB3 /* Events */ = {

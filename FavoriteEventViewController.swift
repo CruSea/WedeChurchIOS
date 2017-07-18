@@ -12,6 +12,7 @@ class FavoriteEventViewController: UIViewController, UITableViewDataSource ,UITa
     
     @IBOutlet weak var favEventTableView: UITableView!
     
+    @IBOutlet weak var menuBar: UIBarButtonItem!
     
     
    // @IBOutlet weak var menuBar: UIBarButtonItem!
@@ -43,13 +44,13 @@ class FavoriteEventViewController: UIViewController, UITableViewDataSource ,UITa
     let eventImages = ["yougo", "yougo", "yougo","yougo"]
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if revealViewController() != nil {
-//            
-//            menuBar.target = revealViewController()
-//            menuBar.action = #selector(SWRevealViewController.revealToggle(_:))
-//            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-//            
-//        }
+        if revealViewController() != nil {
+            
+            menuBar.target = revealViewController()
+            menuBar.action = #selector(SWRevealViewController.revealToggle(_:))
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+        }
         // Do any additional setup after loading the view.
     }
     

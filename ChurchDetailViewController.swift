@@ -88,7 +88,7 @@ class ChurchDetailViewController: UIViewController,UICollectionViewDataSource, U
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! OneChurchCollectionViewCell
         cell.indexPath = indexPath
         //  cell.topButton.backgroundColor = UIColor .blue
-        cell.layer.cornerRadius = 20.0;
+      //  cell.layer.cornerRadius = 20.0;
         // cell.layer.borderColor = UIColor.green.cgColor
         // cell.topLabel.textColor = UIColor.blue
         cell.churchEventImage.image = UIImage(named: (self.churchEventImages?[indexPath.row])!)
@@ -106,20 +106,20 @@ class ChurchDetailViewController: UIViewController,UICollectionViewDataSource, U
     
     
     
-    // MARK: <UICollectionViewDelegateFlowLayout>
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
-        let totalSpace = flowLayout.sectionInset.left
-            + flowLayout.sectionInset.right
-            + (flowLayout.minimumInteritemSpacing * CGFloat(numberOfItemsPerRow - 1))
-        let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(numberOfItemsPerRow))
-        return CGSize(width: size, height: size)
-    }
-    
-    func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {
-        return CGRect(x: x, y: y, width: width, height: height)
-    }
+//    // MARK: <UICollectionViewDelegateFlowLayout>
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        
+//        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+//        let totalSpace = flowLayout.sectionInset.left
+//            + flowLayout.sectionInset.right
+//            + (flowLayout.minimumInteritemSpacing * CGFloat(numberOfItemsPerRow - 1))
+//        let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(numberOfItemsPerRow))
+//        return CGSize(width: size, height: size)
+//    }
+//    
+//    func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {
+//        return CGRect(x: x, y: y, width: width, height: height)
+//    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         

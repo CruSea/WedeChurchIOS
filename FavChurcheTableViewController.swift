@@ -11,6 +11,7 @@ import UIKit
 class FavChurcheTableViewController: UITableViewController {
 
     
+    @IBOutlet weak var menuBar: UIBarButtonItem!
     
     var favChurchNames:[String]?
     var favChurchImages:[String]?
@@ -41,13 +42,13 @@ class FavChurcheTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        if revealViewController() != nil {
-        //
-        //            menuBar.target = revealViewController()
-        //            menuBar.action = #selector(SWRevealViewController.revealToggle(_:))
-        //            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        //
-        //        }
+                if revealViewController() != nil {
+        
+                    menuBar.target = revealViewController()
+                    menuBar.action = #selector(SWRevealViewController.revealToggle(_:))
+                    view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+                }
         // Do any additional setup after loading the view.
         self.favChurchNames = ["Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan", "Mekane Yesus"]
         self.favChurchImages = ["yougo", "yougo", "yougo","yougo"]

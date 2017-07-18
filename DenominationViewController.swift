@@ -45,10 +45,10 @@ class DenominationViewController:  UIViewController,UICollectionViewDataSource, 
             UserDefaults.standard.synchronize()
         }
     }
-    // collection items size
-    var cellWidth:CGFloat{
-        return collectionView.frame.size.width/2
-    }
+//    // collection items size
+//    var cellWidth:CGFloat{
+//        return collectionView.frame.size.width/2
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -143,21 +143,21 @@ class DenominationViewController:  UIViewController,UICollectionViewDataSource, 
     }
     
     
-    
-    // MARK: <UICollectionViewDelegateFlowLayout>
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
-        let totalSpace = flowLayout.sectionInset.left
-            + flowLayout.sectionInset.right
-            + (flowLayout.minimumInteritemSpacing * CGFloat(numberOfItemsPerRow - 1))
-        let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(numberOfItemsPerRow))
-        return CGSize(width: size, height: size)
-    }
-    
-    func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {
-        return CGRect(x: x, y: y, width: width, height: height)
-    }
+//    
+//    // MARK: <UICollectionViewDelegateFlowLayout>
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        
+//        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+//        let totalSpace = flowLayout.sectionInset.left
+//            + flowLayout.sectionInset.right
+//            + (flowLayout.minimumInteritemSpacing * CGFloat(numberOfItemsPerRow - 1))
+//        let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(numberOfItemsPerRow))
+//        return CGSize(width: size, height: size)
+//    }
+//    
+//    func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {
+//        return CGRect(x: x, y: y, width: width, height: height)
+//    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         

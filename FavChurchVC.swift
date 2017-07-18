@@ -75,7 +75,7 @@ class FavChurchVC: UIViewController, UICollectionViewDataSource, UICollectionVie
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! FavChurchesCollectionViewCell
         cell.indexPath = indexPath
         //  cell.topButton.backgroundColor = UIColor .blue
-        cell.layer.cornerRadius = 20.0;
+       // cell.layer.cornerRadius = 20.0;
         // cell.layer.borderColor = UIColor.green.cgColor
         // cell.topLabel.textColor = UIColor.blue
         cell.myFavChurchEventImage.image = UIImage(named: (self.myChurchEventImage?[indexPath.row])!)

@@ -110,22 +110,7 @@ class EventListViewController: UIViewController, UITableViewDataSource, UITableV
         
         return cell
     }
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
-            
-            
-           // cell.contentView.backgroundColor = UIColor.white
-            
-            //cell.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 1.0])
-           // cell.layer.masksToBounds = false
-            cell.layer.cornerRadius = 15.0
-        
-//            cell.layer.shadowOffset = CGSize(width: -1, height: 1)
-//            cell.layer.shadowOpacity = 0.5
-        //cell.layer.shadowColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 1.0])
-        
-        
-    }
+
     
     
     

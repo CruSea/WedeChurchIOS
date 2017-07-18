@@ -13,6 +13,7 @@ class FavoriteHomeChurchViewController: UIViewController,UICollectionViewDataSou
     @IBOutlet weak var myChurchImage: UIImageView!
     @IBOutlet weak var myChurchName: UILabel!
     
+    @IBOutlet weak var menuBar: UIBarButtonItem!
 
     @IBOutlet weak var collectionView: UICollectionView!
     var cellIdentifier = "myChurchCell"
@@ -51,6 +52,14 @@ class FavoriteHomeChurchViewController: UIViewController,UICollectionViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if revealViewController() != nil {
+            
+            menuBar.target = revealViewController()
+            menuBar.action = #selector(SWRevealViewController.revealToggle(_:))
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+        }
+        
 //        myChurchName.text = labeldetail as? String
 //        myChurchImage.image = UIImage(named: imageDetail as! String)
 //        
@@ -73,7 +82,7 @@ class FavoriteHomeChurchViewController: UIViewController,UICollectionViewDataSou
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! MyChurchCollectionViewCell
         cell.indexPath = indexPath
         //  cell.topButton.backgroundColor = UIColor .blue
-        cell.layer.cornerRadius = 20.0;
+     //   cell.layer.cornerRadius = 20.0;
         // cell.layer.borderColor = UIColor.green.cgColor
         // cell.topLabel.textColor = UIColor.blue
         cell.myChurchEventImage.image = UIImage(named: (self.myChurchEventImage?[indexPath.row])!)
