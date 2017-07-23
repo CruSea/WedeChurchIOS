@@ -13,8 +13,6 @@ class FavChurcheTableViewController: UITableViewController {
     
     @IBOutlet weak var menuBar: UIBarButtonItem!
     
-    var favChurchNames:[String]?
-    var favChurchImages:[String]?
     
     //send files to favDetailChurchVC
     var sendFavChurchName: AnyObject? {
@@ -38,7 +36,10 @@ class FavChurcheTableViewController: UITableViewController {
         }
     }
     
-    
+    var eventString = ["one", "two", "three", "four"]
+    var favChurchNames = ["Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan", "Mekane Yesus"]
+    var favChurchImages = ["yougo", "yougo", "yougo","yougo"]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,8 +51,6 @@ class FavChurcheTableViewController: UITableViewController {
         
                 }
         // Do any additional setup after loading the view.
-        self.favChurchNames = ["Mekane Yesus" , "Mulu Wongel" , "Hiwot BIrhan", "Mekane Yesus"]
-        self.favChurchImages = ["yougo", "yougo", "yougo","yougo"]
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,14 +71,25 @@ class FavChurcheTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return favChurchNames!.count
+        return favChurchNames.count
     }
+    
+ 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let myCell = tableView.dequeueReusableCell(withIdentifier: "favChurcheCell", for: indexPath) as! FavChurchesTableViewCell
-        myCell.churchImage.image = UIImage(named: (favChurchImages?[indexPath.row])!)!
-        myCell.churchName.text = favChurchNames?[indexPath.row]
+        myCell.churchImage.image = UIImage(named: (favChurchImages[indexPath.row]))!
+        myCell.churchName.text = favChurchNames[indexPath.row]
         
         return myCell
+    }
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            favChurchNames.remove(at: indexPath.row)
+            favChurchImages.remove(at: indexPath.row)
+            
+            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+            
+        }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -88,13 +98,13 @@ class FavChurcheTableViewController: UITableViewController {
             let VC = segue.destination as! FavChurchVC
             if let indexpath = self.tableView.indexPathForSelectedRow {
                 
-                let Title = favChurchNames![indexpath.row] as String
+                let Title = favChurchNames[indexpath.row] as String
                 VC.SentData1 = Title
                // print(devotionalArray)
                 
                 
                 
-                let Imageview = favChurchImages![indexpath.row] as String
+                let Imageview = favChurchImages[indexpath.row] as String
                 VC.SentData2 = Imageview
                 
                 //                let Imageview2 = imageGoalBot[indexpath.row] as String

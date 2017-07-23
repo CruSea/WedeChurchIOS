@@ -40,8 +40,8 @@ class FavoriteEventViewController: UIViewController, UITableViewDataSource ,UITa
 
     
     
-    let eventString = ["one", "two", "three", "four"]
-    let eventImages = ["yougo", "yougo", "yougo","yougo"]
+    var eventString = ["one", "two", "three", "four"]
+    var eventImages = ["yougo", "yougo", "yougo","yougo"]
     override func viewDidLoad() {
         super.viewDidLoad()
         if revealViewController() != nil {
@@ -80,6 +80,16 @@ class FavoriteEventViewController: UIViewController, UITableViewDataSource ,UITa
         myCell.eventTitle.text = eventString[indexPath.row]
         
         return myCell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            eventString.remove(at: indexPath.row)
+            eventImages.remove(at: indexPath.row)
+            
+            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+            
+        }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
