@@ -43,7 +43,11 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addSearchResultView()
+        
+        //adding bottomsheetcontroller
+        bottomView()
+        
+        // adding map manager
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
@@ -63,14 +67,28 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         // Do any additional setup after loading the view.
     }
 
-    func addSearchResultView(){
+    func bottomView(){
         
-        let searchVC = storyboard?.instantiateViewController(withIdentifier: "frequentBottomVC") as! BottomLocationVCViewController
+        let bottomVC = storyboard?.instantiateViewController(withIdentifier: "frequentBottomVC") as! BottomLocationVCViewController
         
-        searchVC.view.frame = CGRect(x: 0, y: UIScreen.main.bounds.height , width: self.view.frame.width, height: self.view.frame.height)
-        self.addChildViewController(searchVC)
-        self.view.addSubview(searchVC.view)
-        searchVC.didMove(toParentViewController: self)
+        bottomVC.view.frame = CGRect(x: 0, y: UIScreen.main.bounds.height , width: self.view.frame.width, height: self.view.frame.height)
+        self.addChildViewController(bottomVC)
+        self.view.addSubview(bottomVC.view)
+        bottomVC.didMove(toParentViewController: self)
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
+        
+        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn");
+        
+        if(!isUserLoggedIn)
+        {
+            self.performSegue(withIdentifier: "loginView", sender: self);
+        }
+        
+        
     }
 
     /*

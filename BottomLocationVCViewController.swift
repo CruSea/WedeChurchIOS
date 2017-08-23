@@ -45,7 +45,12 @@ class BottomLocationVCViewController: UIViewController {
         addGestureForBottomAnimation()
         let titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, for: .selected)
+        
+        
+        
         segmentedControl.initUI()
+        segmentedControl.backgroundColor = UIColor(red:24.0/255.0, green:124.0/255.0, blue:123.0/255.0, alpha:1.0)
+        segmentedControl.tintColor = UIColor(red:7.0/255.0, green:180.0/255.0, blue:177.0/255.0, alpha:1.0)
         segmentedControl.selectedSegmentIndex = TabIndex.firstChildTab.rawValue
         displayCurrentTab(TabIndex.firstChildTab.rawValue)
         
