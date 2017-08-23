@@ -90,6 +90,38 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         
         
     }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(true)
+//        
+//        if UserDefaults.standard.value(forKey: "password") != nil {
+//            //do something here if password exists
+//            if UserDefaults.standard.value(forKey: "email") != nil{
+//                username = UserDefaults.standard.value(forKey: "email") as! NSString?
+//            }else{
+//                username = UserDefaults.standard.value(forKey: "phone") as! NSString?
+//            }
+//            password = UserDefaults.standard.value(forKey: "password") as! NSString?
+//            
+//            if UserDefaults.standard.value(forKey: "country") != nil {
+//                country = UserDefaults.standard.value(forKey: "country") as! NSString?
+//            }else{
+//                country = ""
+//            }
+//            
+//            
+////            if isInternetAvailable() {
+////                print("internet available")
+////                self.getDataFromServer()
+////            }else{
+////                print("internet not available")
+////                self.fetchDataFromDB()
+////            }
+//            
+//        } else {
+//            //no details exists
+//            self.performSegue(withIdentifier: "gotoLogin", sender: self)
+//        }
+//    }
 
     /*
     // MARK: - Navigation

@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F8C92217843C70E3374B952376F40C /* Pods-WedeChurchIOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3C6A0544E034916F5A147E7444525C /* Pods-WedeChurchIOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0968524ED4DE8DF7834055C5B6089D72 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B46DBFF3A36C2A3BFA5CD06A1960E97F /* MBProgressHUD-dummy.m */; };
+		14CA32AACADBC7D008311E6F720D583D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
+		159169E5E8902453CF30767FE93F085B /* Pods-WedeChurchIOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0695836F8427BDB5477180ED957BD3 /* Pods-WedeChurchIOSTests-dummy.m */; };
+		28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A83C101219E7ED4222CD65BCE24B0A5E /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F9024DB2E57169E68BC120481442319 /* Pods-WedeChurchIOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB42DF55191A264A104CF564ED8CB20 /* Pods-WedeChurchIOSUITests-dummy.m */; };
+		58F9594A63D39710E63C0AD9B87E7E3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
+		5EFE3C1316AE3DF65B81286439987953 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7BDB2580B244756CFA046131516EF2 /* QuartzCore.framework */; };
+		6DDF005FD55DC58D07A941E63984555B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
+		6E2A8E49ECEC8892C840B03B5C7BF388 /* Pods-WedeChurchIOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94DDEBCCF11CC9C9D18575D8E9726AD0 /* Pods-WedeChurchIOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8901F63D01B61D34EC9EBD0CB61C982A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
+		897C38C8E3C31950E2E93A4D6937CCC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC88E9BB2DAE98E2B831183A06BFB8C /* MBProgressHUD.m */; };
+		A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = EA7EF56646DB1B2F653740B0FB77850B /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A68C9B356EAEDC0163CCBD4B0D126D9D /* Pods-WedeChurchIOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01764FE2ABD1532649361B1CEA4A16AB /* Pods-WedeChurchIOS-dummy.m */; };
+		BFC3AAFFCCFE94270FA4A3040449FA18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409899CE1143F81E8130E2069D59605B /* CoreGraphics.framework */; };
+		F6885999F2A0CF635FF9FA8833E07BFC /* Pods-WedeChurchIOSUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC3C71326FEA7533B5BE1AF7310E1AC /* Pods-WedeChurchIOSUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEAD6CFA392040472C48D70C0965817C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41FA54D12162DAD51D02FC58A2CD5034;
+			remoteInfo = MBProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01764FE2ABD1532649361B1CEA4A16AB /* Pods-WedeChurchIOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WedeChurchIOS-dummy.m"; sourceTree = "<group>"; };
+		03C7A1029AD42E7113425DE92113DD76 /* Pods-WedeChurchIOSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WedeChurchIOSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C7E460C49111536303EAFA155E390B2 /* Pods_WedeChurchIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WedeChurchIOSTests.framework; path = "Pods-WedeChurchIOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1326C3FCD07FB5D8F1942A90823816F5 /* Pods-WedeChurchIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WedeChurchIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		132CA479C933581D44922CBDADF0C8A7 /* Pods-WedeChurchIOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WedeChurchIOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		15BDF7D74216C5CA698B3B573C51FC24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5E724A14CA4C8325B6FA2DE460B974 /* Pods-WedeChurchIOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WedeChurchIOSTests-resources.sh"; sourceTree = "<group>"; };
+		3BD4CB872A0BDAEDA98A215D0397C002 /* Pods-WedeChurchIOSUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WedeChurchIOSUITests-resources.sh"; sourceTree = "<group>"; };
+		4013EAEF2067242050932C6927E9FB98 /* Pods-WedeChurchIOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WedeChurchIOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		409899CE1143F81E8130E2069D59605B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4592B96D77AB9938104540240D55B828 /* Pods_WedeChurchIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WedeChurchIOS.framework; path = "Pods-WedeChurchIOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F7B1ADFBAA5AD7174555013C33C5A8 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		47AF939746A0A7D0EFFC134630332466 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C1EE4B97D02463CB7C4D4F85F068867 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		51BA1BFC5C5E9FA4F3578C89140FCDA2 /* Pods-WedeChurchIOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WedeChurchIOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5399748BE8EC8EA53BA7C146D4989A7A /* Pods-WedeChurchIOSUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WedeChurchIOSUITests-frameworks.sh"; sourceTree = "<group>"; };
+		5EB42DF55191A264A104CF564ED8CB20 /* Pods-WedeChurchIOSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WedeChurchIOSUITests-dummy.m"; sourceTree = "<group>"; };
+		5F7BDB2580B244756CFA046131516EF2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		60427B79826AA7C6DC061D59145CD52E /* Pods-WedeChurchIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WedeChurchIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		617EC5FB55E0D2EB40B37D2AD4BE09AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F4FAB84DE306937ECFDA9931126024 /* Pods-WedeChurchIOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WedeChurchIOSUITests.modulemap"; sourceTree = "<group>"; };
+		66226A94B29BB3107DA6EAB7FA84CDA0 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC70BCB948C043F56F3FE9A12FF262F /* Pods-WedeChurchIOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WedeChurchIOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		7E11FE6023A310C188BFF6D70DF8AEDE /* Pods-WedeChurchIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WedeChurchIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B285FD3524802AD6817C1B83EE5C550 /* Pods-WedeChurchIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WedeChurchIOS.release.xcconfig"; sourceTree = "<group>"; };
+		8CC88E9BB2DAE98E2B831183A06BFB8C /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94DDEBCCF11CC9C9D18575D8E9726AD0 /* Pods-WedeChurchIOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WedeChurchIOSTests-umbrella.h"; sourceTree = "<group>"; };
+		A83C101219E7ED4222CD65BCE24B0A5E /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		B214E9CE202E5B4452C5540EA4B67B01 /* Pods-WedeChurchIOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WedeChurchIOS.modulemap"; sourceTree = "<group>"; };
+		B46DBFF3A36C2A3BFA5CD06A1960E97F /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		B7D50ADDE39405EA899FE19306957808 /* Pods-WedeChurchIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WedeChurchIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BA0695836F8427BDB5477180ED957BD3 /* Pods-WedeChurchIOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WedeChurchIOSTests-dummy.m"; sourceTree = "<group>"; };
+		D22E5CC1481FB2CABAFE58DA560D67EF /* Pods_WedeChurchIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WedeChurchIOSUITests.framework; path = "Pods-WedeChurchIOSUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5CBC6B652CE7DD1DED77F1237F0476 /* Pods-WedeChurchIOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WedeChurchIOS-frameworks.sh"; sourceTree = "<group>"; };
+		DD71A7E2391B90C816D7330BB6B999E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDAA38FC6C729B1A12001B9AD1FEE3F2 /* Pods-WedeChurchIOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WedeChurchIOSTests.modulemap"; sourceTree = "<group>"; };
+		DE95427437D5EA87D6A9D1B0A1B75DBB /* Pods-WedeChurchIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WedeChurchIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA7EF56646DB1B2F653740B0FB77850B /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F1FE68E6B53C71D071B55CC3899F4455 /* Pods-WedeChurchIOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WedeChurchIOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F561804416163A2E5EFC23029D9BD9A3 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		F9AC7677BE0A6CEDF02CE2A628417EFD /* Pods-WedeChurchIOSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WedeChurchIOSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FB3997E3359CFE61D5588F3E4B00D576 /* Pods-WedeChurchIOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WedeChurchIOS-resources.sh"; sourceTree = "<group>"; };
+		FBC3C71326FEA7533B5BE1AF7310E1AC /* Pods-WedeChurchIOSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WedeChurchIOSUITests-umbrella.h"; sourceTree = "<group>"; };
+		FE3C6A0544E034916F5A147E7444525C /* Pods-WedeChurchIOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WedeChurchIOS-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6426ED868F6FC5B7958D02AB8D8B18F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F9594A63D39710E63C0AD9B87E7E3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8380C3F0BA3ED0CDADCB84E13DA7F98A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8901F63D01B61D34EC9EBD0CB61C982A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DD42E39FA57A21F038FA853EEE24BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DDF005FD55DC58D07A941E63984555B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57774E30FD88AE26F9037E1360E947B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC3AAFFCCFE94270FA4A3040449FA18 /* CoreGraphics.framework in Frameworks */,
+				14CA32AACADBC7D008311E6F720D583D /* Foundation.framework in Frameworks */,
+				5EFE3C1316AE3DF65B81286439987953 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A4DBD434EA75DD3EDD3494C46AE6968 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2247CEEDFC68420F711DF5131B6C9FA5 /* Pods-WedeChurchIOS */ = {
+			isa = PBXGroup;
+			children = (
+				47AF939746A0A7D0EFFC134630332466 /* Info.plist */,
+				B214E9CE202E5B4452C5540EA4B67B01 /* Pods-WedeChurchIOS.modulemap */,
+				4013EAEF2067242050932C6927E9FB98 /* Pods-WedeChurchIOS-acknowledgements.markdown */,
+				132CA479C933581D44922CBDADF0C8A7 /* Pods-WedeChurchIOS-acknowledgements.plist */,
+				01764FE2ABD1532649361B1CEA4A16AB /* Pods-WedeChurchIOS-dummy.m */,
+				DD5CBC6B652CE7DD1DED77F1237F0476 /* Pods-WedeChurchIOS-frameworks.sh */,
+				FB3997E3359CFE61D5588F3E4B00D576 /* Pods-WedeChurchIOS-resources.sh */,
+				FE3C6A0544E034916F5A147E7444525C /* Pods-WedeChurchIOS-umbrella.h */,
+				B7D50ADDE39405EA899FE19306957808 /* Pods-WedeChurchIOS.debug.xcconfig */,
+				8B285FD3524802AD6817C1B83EE5C550 /* Pods-WedeChurchIOS.release.xcconfig */,
+			);
+			name = "Pods-WedeChurchIOS";
+			path = "Target Support Files/Pods-WedeChurchIOS";
+			sourceTree = "<group>";
+		};
+		5836A44A75C427EBF4739C55E2315758 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9841862FE02BD09196B31E3026B4325C /* MBProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A4DBD434EA75DD3EDD3494C46AE6968 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				409899CE1143F81E8130E2069D59605B /* CoreGraphics.framework */,
+				12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */,
+				5F7BDB2580B244756CFA046131516EF2 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		719A3F20E1BE99A51BEDF88F1CA4EF17 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2247CEEDFC68420F711DF5131B6C9FA5 /* Pods-WedeChurchIOS */,
+				C053BC7C54ACB0FF5A9E5A64782209C6 /* Pods-WedeChurchIOSTests */,
+				B70E7265132A9AA90A4F3B58599F3D1A /* Pods-WedeChurchIOSUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				5836A44A75C427EBF4739C55E2315758 /* Pods */,
+				AF68DF639CB6FB3FBCD3EAAE3988A2A7 /* Products */,
+				719A3F20E1BE99A51BEDF88F1CA4EF17 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9841862FE02BD09196B31E3026B4325C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				EA7EF56646DB1B2F653740B0FB77850B /* MBProgressHUD.h */,
+				8CC88E9BB2DAE98E2B831183A06BFB8C /* MBProgressHUD.m */,
+				A965BDBE5FC4856535619D751B2F0F38 /* Support Files */,
+			);
+			name = MBProgressHUD;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		A965BDBE5FC4856535619D751B2F0F38 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD71A7E2391B90C816D7330BB6B999E4 /* Info.plist */,
+				45F7B1ADFBAA5AD7174555013C33C5A8 /* MBProgressHUD.modulemap */,
+				4C1EE4B97D02463CB7C4D4F85F068867 /* MBProgressHUD.xcconfig */,
+				B46DBFF3A36C2A3BFA5CD06A1960E97F /* MBProgressHUD-dummy.m */,
+				F561804416163A2E5EFC23029D9BD9A3 /* MBProgressHUD-prefix.pch */,
+				A83C101219E7ED4222CD65BCE24B0A5E /* MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		AF68DF639CB6FB3FBCD3EAAE3988A2A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66226A94B29BB3107DA6EAB7FA84CDA0 /* MBProgressHUD.framework */,
+				4592B96D77AB9938104540240D55B828 /* Pods_WedeChurchIOS.framework */,
+				0C7E460C49111536303EAFA155E390B2 /* Pods_WedeChurchIOSTests.framework */,
+				D22E5CC1481FB2CABAFE58DA560D67EF /* Pods_WedeChurchIOSUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B70E7265132A9AA90A4F3B58599F3D1A /* Pods-WedeChurchIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				617EC5FB55E0D2EB40B37D2AD4BE09AE /* Info.plist */,
+				65F4FAB84DE306937ECFDA9931126024 /* Pods-WedeChurchIOSUITests.modulemap */,
+				F9AC7677BE0A6CEDF02CE2A628417EFD /* Pods-WedeChurchIOSUITests-acknowledgements.markdown */,
+				03C7A1029AD42E7113425DE92113DD76 /* Pods-WedeChurchIOSUITests-acknowledgements.plist */,
+				5EB42DF55191A264A104CF564ED8CB20 /* Pods-WedeChurchIOSUITests-dummy.m */,
+				5399748BE8EC8EA53BA7C146D4989A7A /* Pods-WedeChurchIOSUITests-frameworks.sh */,
+				3BD4CB872A0BDAEDA98A215D0397C002 /* Pods-WedeChurchIOSUITests-resources.sh */,
+				FBC3C71326FEA7533B5BE1AF7310E1AC /* Pods-WedeChurchIOSUITests-umbrella.h */,
+				60427B79826AA7C6DC061D59145CD52E /* Pods-WedeChurchIOSUITests.debug.xcconfig */,
+				1326C3FCD07FB5D8F1942A90823816F5 /* Pods-WedeChurchIOSUITests.release.xcconfig */,
+			);
+			name = "Pods-WedeChurchIOSUITests";
+			path = "Target Support Files/Pods-WedeChurchIOSUITests";
+			sourceTree = "<group>";
+		};
+		C053BC7C54ACB0FF5A9E5A64782209C6 /* Pods-WedeChurchIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				15BDF7D74216C5CA698B3B573C51FC24 /* Info.plist */,
+				DDAA38FC6C729B1A12001B9AD1FEE3F2 /* Pods-WedeChurchIOSTests.modulemap */,
+				F1FE68E6B53C71D071B55CC3899F4455 /* Pods-WedeChurchIOSTests-acknowledgements.markdown */,
+				51BA1BFC5C5E9FA4F3578C89140FCDA2 /* Pods-WedeChurchIOSTests-acknowledgements.plist */,
+				BA0695836F8427BDB5477180ED957BD3 /* Pods-WedeChurchIOSTests-dummy.m */,
+				6FC70BCB948C043F56F3FE9A12FF262F /* Pods-WedeChurchIOSTests-frameworks.sh */,
+				2A5E724A14CA4C8325B6FA2DE460B974 /* Pods-WedeChurchIOSTests-resources.sh */,
+				94DDEBCCF11CC9C9D18575D8E9726AD0 /* Pods-WedeChurchIOSTests-umbrella.h */,
+				7E11FE6023A310C188BFF6D70DF8AEDE /* Pods-WedeChurchIOSTests.debug.xcconfig */,
+				DE95427437D5EA87D6A9D1B0A1B75DBB /* Pods-WedeChurchIOSTests.release.xcconfig */,
+			);
+			name = "Pods-WedeChurchIOSTests";
+			path = "Target Support Files/Pods-WedeChurchIOSTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		197B7877D5D346F405BDD059EF96DBDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */,
+				A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98868FD13FD4C5FCB937033C8FA780F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E2A8E49ECEC8892C840B03B5C7BF388 /* Pods-WedeChurchIOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD348AA1A2205EC0AF63A283C6A173A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F8C92217843C70E3374B952376F40C /* Pods-WedeChurchIOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04FC436F48EC7009C8E90B3F6A59E6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6885999F2A0CF635FF9FA8833E07BFC /* Pods-WedeChurchIOSUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC1874913BA1F82C4953C3C7F551AB22 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				FE8E0446C3B3B52779E8DE373E495A61 /* Sources */,
+				B57774E30FD88AE26F9037E1360E947B /* Frameworks */,
+				197B7877D5D346F405BDD059EF96DBDC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = 66226A94B29BB3107DA6EAB7FA84CDA0 /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		930A5CCCC004E554AD9B22D43D1E5412 /* Pods-WedeChurchIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7671A73333B04E21C2676E7564BA77D0 /* Build configuration list for PBXNativeTarget "Pods-WedeChurchIOSTests" */;
+			buildPhases = (
+				674BC1F59A3741F7CBD30D658DD6A4D1 /* Sources */,
+				6426ED868F6FC5B7958D02AB8D8B18F1 /* Frameworks */,
+				A98868FD13FD4C5FCB937033C8FA780F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WedeChurchIOSTests";
+			productName = "Pods-WedeChurchIOSTests";
+			productReference = 0C7E460C49111536303EAFA155E390B2 /* Pods_WedeChurchIOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4639614A2070F6B73F083083CF9EF73 /* Pods-WedeChurchIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AABC160AD119167274ABA6617F54FB2 /* Build configuration list for PBXNativeTarget "Pods-WedeChurchIOS" */;
+			buildPhases = (
+				C2FF25613D6A6A27E24DE56EB5A1D17B /* Sources */,
+				8380C3F0BA3ED0CDADCB84E13DA7F98A /* Frameworks */,
+				BD348AA1A2205EC0AF63A283C6A173A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FF1150E6C6FF0E349F9DF90AD375D9E /* PBXTargetDependency */,
+			);
+			name = "Pods-WedeChurchIOS";
+			productName = "Pods-WedeChurchIOS";
+			productReference = 4592B96D77AB9938104540240D55B828 /* Pods_WedeChurchIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1F6E4734190E52A7651DDAFE8AF5348 /* Pods-WedeChurchIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D85DC47B04B9B1780D3241F5BAD82F9 /* Build configuration list for PBXNativeTarget "Pods-WedeChurchIOSUITests" */;
+			buildPhases = (
+				25A4CE25ADBB25FC5C8E88BC9513BB74 /* Sources */,
+				A5DD42E39FA57A21F038FA853EEE24BD /* Frameworks */,
+				E04FC436F48EC7009C8E90B3F6A59E6F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WedeChurchIOSUITests";
+			productName = "Pods-WedeChurchIOSUITests";
+			productReference = D22E5CC1481FB2CABAFE58DA560D67EF /* Pods_WedeChurchIOSUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AF68DF639CB6FB3FBCD3EAAE3988A2A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */,
+				D4639614A2070F6B73F083083CF9EF73 /* Pods-WedeChurchIOS */,
+				930A5CCCC004E554AD9B22D43D1E5412 /* Pods-WedeChurchIOSTests */,
+				F1F6E4734190E52A7651DDAFE8AF5348 /* Pods-WedeChurchIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25A4CE25ADBB25FC5C8E88BC9513BB74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9024DB2E57169E68BC120481442319 /* Pods-WedeChurchIOSUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674BC1F59A3741F7CBD30D658DD6A4D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				159169E5E8902453CF30767FE93F085B /* Pods-WedeChurchIOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FF25613D6A6A27E24DE56EB5A1D17B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68C9B356EAEDC0163CCBD4B0D126D9D /* Pods-WedeChurchIOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8E0446C3B3B52779E8DE373E495A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0968524ED4DE8DF7834055C5B6089D72 /* MBProgressHUD-dummy.m in Sources */,
+				897C38C8E3C31950E2E93A4D6937CCC4 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FF1150E6C6FF0E349F9DF90AD375D9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */;
+			targetProxy = FEAD6CFA392040472C48D70C0965817C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B16963649DDE1ACD2FF8FD42EAE71C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1326C3FCD07FB5D8F1942A90823816F5 /* Pods-WedeChurchIOSUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WedeChurchIOSUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WedeChurchIOSUITests/Pods-WedeChurchIOSUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WedeChurchIOSUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4F7088A8A9B6C8B5223B75AC2D3107D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D50ADDE39405EA899FE19306957808 /* Pods-WedeChurchIOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WedeChurchIOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WedeChurchIOS/Pods-WedeChurchIOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WedeChurchIOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7104DCB2887BC8298304C73FCDF663B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE95427437D5EA87D6A9D1B0A1B75DBB /* Pods-WedeChurchIOSTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WedeChurchIOSTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WedeChurchIOSTests/Pods-WedeChurchIOSTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WedeChurchIOSTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7484255E8BA401AA112214E6E20E4BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C1EE4B97D02463CB7C4D4F85F068867 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A1095AEB8C3F95B5C254923B1E863A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E11FE6023A310C188BFF6D70DF8AEDE /* Pods-WedeChurchIOSTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WedeChurchIOSTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WedeChurchIOSTests/Pods-WedeChurchIOSTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WedeChurchIOSTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8AE084C71C1F88D6D6D856FEC77B2403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60427B79826AA7C6DC061D59145CD52E /* Pods-WedeChurchIOSUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WedeChurchIOSUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WedeChurchIOSUITests/Pods-WedeChurchIOSUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WedeChurchIOSUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5C9894104EA3B35F7EE2C3C2AB73359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B285FD3524802AD6817C1B83EE5C550 /* Pods-WedeChurchIOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WedeChurchIOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WedeChurchIOS/Pods-WedeChurchIOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WedeChurchIOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FCE5C1F660A58636C90457BBBB9EF4CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C1EE4B97D02463CB7C4D4F85F068867 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D85DC47B04B9B1780D3241F5BAD82F9 /* Build configuration list for PBXNativeTarget "Pods-WedeChurchIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE084C71C1F88D6D6D856FEC77B2403 /* Debug */,
+				3B16963649DDE1ACD2FF8FD42EAE71C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7671A73333B04E21C2676E7564BA77D0 /* Build configuration list for PBXNativeTarget "Pods-WedeChurchIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1095AEB8C3F95B5C254923B1E863A4 /* Debug */,
+				7104DCB2887BC8298304C73FCDF663B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AABC160AD119167274ABA6617F54FB2 /* Build configuration list for PBXNativeTarget "Pods-WedeChurchIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7088A8A9B6C8B5223B75AC2D3107D0 /* Debug */,
+				E5C9894104EA3B35F7EE2C3C2AB73359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC1874913BA1F82C4953C3C7F551AB22 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7484255E8BA401AA112214E6E20E4BFA /* Debug */,
+				FCE5C1F660A58636C90457BBBB9EF4CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

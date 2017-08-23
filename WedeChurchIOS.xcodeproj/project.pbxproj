@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D58F6A00A0DDBCC391EF487 /* Pods_WedeChurchIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1CA8F81A4ED07773A369DE /* Pods_WedeChurchIOS.framework */; };
 		830FEBA91EE7F1770085801D /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBA81EE7F1770085801D /* EventListViewController.swift */; };
 		830FEBAD1EE7F8AB0085801D /* EventListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBAC1EE7F8AB0085801D /* EventListTableViewCell.swift */; };
 		830FEBB51EE8510A0085801D /* DenominationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FEBB41EE8510A0085801D /* DenominationViewController.swift */; };
@@ -42,7 +43,6 @@
 		83536ECA1E8D4878003A8FC4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83536EC91E8D4878003A8FC4 /* SWRevealViewController.m */; };
 		83536ECF1E8D4DB5003A8FC4 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83536ECE1E8D4DB5003A8FC4 /* EventsViewController.swift */; };
 		836235251E7DA28000F5844B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836235241E7DA28000F5844B /* AppDelegate.swift */; };
-		836235271E7DA28000F5844B /* ViewControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836235261E7DA28000F5844B /* ViewControllerr.swift */; };
 		8362352A1E7DA28000F5844B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836235281E7DA28000F5844B /* Main.storyboard */; };
 		8362352F1E7DA28100F5844B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8362352D1E7DA28100F5844B /* LaunchScreen.storyboard */; };
 		8362353A1E7DA28100F5844B /* WedeChurchIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836235391E7DA28100F5844B /* WedeChurchIOSTests.swift */; };
@@ -63,10 +63,14 @@
 		83BF0EE21EE9429D00EBD759 /* OneChurchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF0EE11EE9429D00EBD759 /* OneChurchDetailViewController.swift */; };
 		83BF0EE61EE95FDC00EBD759 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF0EE51EE95FDC00EBD759 /* FavoritesViewController.swift */; };
 		83BF0EE81EE963B700EBD759 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF0EE71EE963B700EBD759 /* FavoritesTableViewCell.swift */; };
+		83D3A4251F4DBE2000AF686A /* MySIgnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3A4241F4DBE2000AF686A /* MySIgnViewController.swift */; };
+		83D3A4291F4DC45D00AF686A /* phoneConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3A4281F4DC45D00AF686A /* phoneConstant.swift */; };
 		83D71F8F1E8BDF9600D1D356 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */; };
 		83EDFF281EC08C340008CFB3 /* EventMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDFF271EC08C340008CFB3 /* EventMainViewController.swift */; };
 		83EDFF2A1EC08C500008CFB3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDFF291EC08C500008CFB3 /* CollectionViewCell.swift */; };
 		83FEAE4F1EDD5E3600646E11 /* ChurchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEAE4E1EDD5E3600646E11 /* ChurchDetailViewController.swift */; };
+		9420D81A17CDAD63C9D20F21 /* Pods_WedeChurchIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA032388461D19FA9378123 /* Pods_WedeChurchIOSUITests.framework */; };
+		BCA21642E2CFFBE048B32828 /* Pods_WedeChurchIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EAB448D96A154A5A820F72 /* Pods_WedeChurchIOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +104,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06EAB448D96A154A5A820F72 /* Pods_WedeChurchIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WedeChurchIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BA5527D784CD86A1215264 /* Pods-WedeChurchIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WedeChurchIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WedeChurchIOS/Pods-WedeChurchIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3DA20692CC12D5D073E2CEFF /* Pods-WedeChurchIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WedeChurchIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WedeChurchIOSTests/Pods-WedeChurchIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		535F95642A8E89BB9854E2BC /* Pods-WedeChurchIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WedeChurchIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-WedeChurchIOS/Pods-WedeChurchIOS.release.xcconfig"; sourceTree = "<group>"; };
+		6A4AA8054C56F3480F39EE43 /* Pods-WedeChurchIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WedeChurchIOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WedeChurchIOSUITests/Pods-WedeChurchIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7CA032388461D19FA9378123 /* Pods_WedeChurchIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WedeChurchIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		830FEBA81EE7F1770085801D /* EventListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		830FEBAC1EE7F8AB0085801D /* EventListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListTableViewCell.swift; sourceTree = "<group>"; };
 		830FEBB41EE8510A0085801D /* DenominationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenominationViewController.swift; sourceTree = "<group>"; };
@@ -138,7 +148,6 @@
 		83536ECE1E8D4DB5003A8FC4 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		836235211E7DA28000F5844B /* WedeChurchIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WedeChurchIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836235241E7DA28000F5844B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		836235261E7DA28000F5844B /* ViewControllerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerr.swift; sourceTree = "<group>"; };
 		836235291E7DA28000F5844B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8362352E1E7DA28100F5844B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		836235301E7DA28100F5844B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -157,17 +166,22 @@
 		83AB27AB1EF0345800A39620 /* FavoriteHomeChurchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteHomeChurchViewController.swift; sourceTree = "<group>"; };
 		83AB27AD1EF03E8000A39620 /* FavEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavEventTableViewCell.swift; sourceTree = "<group>"; };
 		83AB27B21EF07F2B00A39620 /* FavChurchesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavChurchesTableViewCell.swift; sourceTree = "<group>"; };
-		83ACCFD01EEFCA6B001F9196 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		83ACCFD21EEFCA96001F9196 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		83ACCFD01EEFCA6B001F9196 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
+		83ACCFD21EEFCA96001F9196 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = ../SettingViewController.swift; sourceTree = "<group>"; };
 		83AE36E91EFFFBC200A9DC7D /* FavChurchDetailEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavChurchDetailEventVC.swift; sourceTree = "<group>"; };
 		83BF0EDF1EE9391800EBD759 /* OneChurchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneChurchCollectionViewCell.swift; sourceTree = "<group>"; };
 		83BF0EE11EE9429D00EBD759 /* OneChurchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneChurchDetailViewController.swift; sourceTree = "<group>"; };
 		83BF0EE51EE95FDC00EBD759 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		83BF0EE71EE963B700EBD759 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		83D3A4241F4DBE2000AF686A /* MySIgnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySIgnViewController.swift; sourceTree = "<group>"; };
+		83D3A4281F4DC45D00AF686A /* phoneConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = phoneConstant.swift; sourceTree = "<group>"; };
 		83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = WedeChurchIOS/HomeViewController.swift; sourceTree = "<group>"; };
 		83EDFF271EC08C340008CFB3 /* EventMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMainViewController.swift; sourceTree = "<group>"; };
 		83EDFF291EC08C500008CFB3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		83FEAE4E1EDD5E3600646E11 /* ChurchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchDetailViewController.swift; sourceTree = "<group>"; };
+		A75B1C322F2E39B310557B38 /* Pods-WedeChurchIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WedeChurchIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WedeChurchIOSUITests/Pods-WedeChurchIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF1CA8F81A4ED07773A369DE /* Pods_WedeChurchIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WedeChurchIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E185E2B7F8C2AA042783ABC5 /* Pods-WedeChurchIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WedeChurchIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WedeChurchIOSTests/Pods-WedeChurchIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				832AC8BC1EE59C900065A5EA /* CoreLocation.framework in Frameworks */,
+				2D58F6A00A0DDBCC391EF487 /* Pods_WedeChurchIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA21642E2CFFBE048B32828 /* Pods_WedeChurchIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9420D81A17CDAD63C9D20F21 /* Pods_WedeChurchIOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +222,7 @@
 				83D6E88B1F1D60D3004A15DA /* HomePageEvents */,
 			);
 			name = HomePage;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		832179C01EFFA80F00FCB6B3 /* View */ = {
@@ -217,12 +235,16 @@
 				832179BD1EFFA80C00FCB6B3 /* FancyBtn.swift */,
 			);
 			name = View;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		832AC8BA1EE59C900065A5EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				832AC8BB1EE59C900065A5EA /* CoreLocation.framework */,
+				AF1CA8F81A4ED07773A369DE /* Pods_WedeChurchIOS.framework */,
+				06EAB448D96A154A5A820F72 /* Pods_WedeChurchIOSTests.framework */,
+				7CA032388461D19FA9378123 /* Pods_WedeChurchIOSUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,6 +256,7 @@
 				833317221EAF2CEA003DCF71 /* PageViewController.swift */,
 			);
 			name = Introduction;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		83536ECD1E8D4BD3003A8FC4 /* SWController */ = {
@@ -244,27 +267,19 @@
 				83536EC91E8D4878003A8FC4 /* SWRevealViewController.m */,
 			);
 			name = SWController;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		836235181E7DA28000F5844B = {
 			isa = PBXGroup;
 			children = (
-				831C96EF1F1515B700931257 /* HomePage */,
-				832179C01EFFA80F00FCB6B3 /* View */,
-				83ACCFD21EEFCA96001F9196 /* SettingViewController.swift */,
-				83ACCFD01EEFCA6B001F9196 /* ProfileViewController.swift */,
-				83BF0EE41EE95FC800EBD759 /* Favorites */,
-				83BF0EE31EE95F8900EBD759 /* HomeBottomSheet */,
-				83BF0EDE1EE921AC00EBD759 /* Denomination */,
-				836C32411ECA63AD00E3EA83 /* Church */,
-				83EDFF261EC08BFF0008CFB3 /* Events */,
-				833317251EAF3818003DCF71 /* Introduction */,
-				83536ECD1E8D4BD3003A8FC4 /* SWController */,
+				83D3A4241F4DBE2000AF686A /* MySIgnViewController.swift */,
 				836235231E7DA28000F5844B /* WedeChurchIOS */,
 				836235381E7DA28100F5844B /* WedeChurchIOSTests */,
 				836235431E7DA28100F5844B /* WedeChurchIOSUITests */,
 				836235221E7DA28000F5844B /* Products */,
 				832AC8BA1EE59C900065A5EA /* Frameworks */,
+				DD419568B04E94B42DB2789F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,17 +296,28 @@
 		836235231E7DA28000F5844B /* WedeChurchIOS */ = {
 			isa = PBXGroup;
 			children = (
+				831C96EF1F1515B700931257 /* HomePage */,
+				832179C01EFFA80F00FCB6B3 /* View */,
+				83BF0EE41EE95FC800EBD759 /* Favorites */,
+				83BF0EE31EE95F8900EBD759 /* HomeBottomSheet */,
+				83BF0EDE1EE921AC00EBD759 /* Denomination */,
+				836C32411ECA63AD00E3EA83 /* Church */,
+				83EDFF261EC08BFF0008CFB3 /* Events */,
+				833317251EAF3818003DCF71 /* Introduction */,
+				83536ECD1E8D4BD3003A8FC4 /* SWController */,
 				836235241E7DA28000F5844B /* AppDelegate.swift */,
 				833317261EAF3A90003DCF71 /* Assets.xcassets */,
-				836235261E7DA28000F5844B /* ViewControllerr.swift */,
 				836235281E7DA28000F5844B /* Main.storyboard */,
 				8362352D1E7DA28100F5844B /* LaunchScreen.storyboard */,
 				836235301E7DA28100F5844B /* Info.plist */,
+				83ACCFD21EEFCA96001F9196 /* SettingViewController.swift */,
+				83ACCFD01EEFCA6B001F9196 /* ProfileViewController.swift */,
 				836F0C801E82B8AE0093C936 /* LoginViewController.swift */,
 				836F0C821E82B8BC0093C936 /* SignUpViewController.swift */,
 				83536EBD1E8D4577003A8FC4 /* menuViewController.swift */,
 				83536EBF1E8D45AA003A8FC4 /* MenuCell.swift */,
 				83536ECE1E8D4DB5003A8FC4 /* EventsViewController.swift */,
+				83D3A4281F4DC45D00AF686A /* phoneConstant.swift */,
 			);
 			path = WedeChurchIOS;
 			sourceTree = "<group>";
@@ -323,6 +349,7 @@
 				83BF0EE11EE9429D00EBD759 /* OneChurchDetailViewController.swift */,
 			);
 			name = Church;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		83AB27AF1EF07E8300A39620 /* Events */ = {
@@ -365,6 +392,7 @@
 				830FEBBC1EE8597B0085801D /* DenominationDetailView.swift */,
 			);
 			name = Denomination;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		83BF0EE31EE95F8900EBD759 /* HomeBottomSheet */ = {
@@ -376,6 +404,7 @@
 				834FC7CB1E92EB8000B0E0BB /* BottomLocationVCViewController.swift */,
 			);
 			name = HomeBottomSheet;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		83BF0EE41EE95FC800EBD759 /* Favorites */ = {
@@ -390,6 +419,7 @@
 				83AB27A51EF019B600A39620 /* FavoritesTabController.swift */,
 			);
 			name = Favorites;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		83D6E88B1F1D60D3004A15DA /* HomePageEvents */ = {
@@ -420,6 +450,20 @@
 				830FEBAC1EE7F8AB0085801D /* EventListTableViewCell.swift */,
 			);
 			name = Events;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DD419568B04E94B42DB2789F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15BA5527D784CD86A1215264 /* Pods-WedeChurchIOS.debug.xcconfig */,
+				535F95642A8E89BB9854E2BC /* Pods-WedeChurchIOS.release.xcconfig */,
+				E185E2B7F8C2AA042783ABC5 /* Pods-WedeChurchIOSTests.debug.xcconfig */,
+				3DA20692CC12D5D073E2CEFF /* Pods-WedeChurchIOSTests.release.xcconfig */,
+				A75B1C322F2E39B310557B38 /* Pods-WedeChurchIOSUITests.debug.xcconfig */,
+				6A4AA8054C56F3480F39EE43 /* Pods-WedeChurchIOSUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,10 +473,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 836235491E7DA28100F5844B /* Build configuration list for PBXNativeTarget "WedeChurchIOS" */;
 			buildPhases = (
+				55E561F1B1BAB62F35142AFE /* [CP] Check Pods Manifest.lock */,
 				8362351D1E7DA28000F5844B /* Sources */,
 				8362351E1E7DA28000F5844B /* Frameworks */,
 				8362351F1E7DA28000F5844B /* Resources */,
 				832AD2241EA8B275000777BF /* Embed Frameworks */,
+				0991CBD4C5F43FC63A913BA9 /* [CP] Embed Pods Frameworks */,
+				E14D475F7963DBB6B3CD7537 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -447,9 +494,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8362354C1E7DA28100F5844B /* Build configuration list for PBXNativeTarget "WedeChurchIOSTests" */;
 			buildPhases = (
+				BB84157C0CECF7C56391A238 /* [CP] Check Pods Manifest.lock */,
 				836235311E7DA28100F5844B /* Sources */,
 				836235321E7DA28100F5844B /* Frameworks */,
 				836235331E7DA28100F5844B /* Resources */,
+				808EA97B5CE578C8B0F8A962 /* [CP] Embed Pods Frameworks */,
+				01C6FEFF6C13A5B5BBDFA15C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -465,9 +515,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8362354F1E7DA28100F5844B /* Build configuration list for PBXNativeTarget "WedeChurchIOSUITests" */;
 			buildPhases = (
+				720561EF764EADE11E0417F3 /* [CP] Check Pods Manifest.lock */,
 				8362353C1E7DA28100F5844B /* Sources */,
 				8362353D1E7DA28100F5844B /* Frameworks */,
 				8362353E1E7DA28100F5844B /* Resources */,
+				9E0580B129F010AC1D4DC329 /* [CP] Embed Pods Frameworks */,
+				DC4D3065FE62B817DA593805 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -554,6 +607,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01C6FEFF6C13A5B5BBDFA15C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WedeChurchIOSTests/Pods-WedeChurchIOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0991CBD4C5F43FC63A913BA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WedeChurchIOS/Pods-WedeChurchIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55E561F1B1BAB62F35142AFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		720561EF764EADE11E0417F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		808EA97B5CE578C8B0F8A962 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WedeChurchIOSTests/Pods-WedeChurchIOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E0580B129F010AC1D4DC329 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WedeChurchIOSUITests/Pods-WedeChurchIOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB84157C0CECF7C56391A238 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC4D3065FE62B817DA593805 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WedeChurchIOSUITests/Pods-WedeChurchIOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E14D475F7963DBB6B3CD7537 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WedeChurchIOS/Pods-WedeChurchIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8362351D1E7DA28000F5844B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -580,6 +771,7 @@
 				830FEBB51EE8510A0085801D /* DenominationViewController.swift in Sources */,
 				83A6453B1F002DB200F7A761 /* TabySegmentedControl.swift in Sources */,
 				836F0C811E82B8AE0093C936 /* LoginViewController.swift in Sources */,
+				83D3A4291F4DC45D00AF686A /* phoneConstant.swift in Sources */,
 				8321D8091EFBB3DF002AE1B7 /* FavChurchVC.swift in Sources */,
 				83BF0EE01EE9391800EBD759 /* OneChurchCollectionViewCell.swift in Sources */,
 				832179B91EFFA7F800FCB6B3 /* CircleView.swift in Sources */,
@@ -590,13 +782,13 @@
 				832179C21EFFA83E00FCB6B3 /* Constants.swift in Sources */,
 				831C96F11F1515F800931257 /* MapTypeViewController.swift in Sources */,
 				83EDFF2A1EC08C500008CFB3 /* CollectionViewCell.swift in Sources */,
+				83D3A4251F4DBE2000AF686A /* MySIgnViewController.swift in Sources */,
 				832179C41EFFC13200FCB6B3 /* MyChurchCollectionViewCell.swift in Sources */,
 				83ACCFD11EEFCA6B001F9196 /* ProfileViewController.swift in Sources */,
 				830FEBBB1EE858F00085801D /* ChurchListTableViewCell.swift in Sources */,
 				830FEBBD1EE8597B0085801D /* DenominationDetailView.swift in Sources */,
 				83AE36EA1EFFFBC200A9DC7D /* FavChurchDetailEventVC.swift in Sources */,
 				83536ECA1E8D4878003A8FC4 /* SWRevealViewController.m in Sources */,
-				836235271E7DA28000F5844B /* ViewControllerr.swift in Sources */,
 				830FEBB91EE852400085801D /* DenominationCollectionViewCell.swift in Sources */,
 				830FEBAD1EE7F8AB0085801D /* EventListTableViewCell.swift in Sources */,
 				832D4C961F164E5E009A7BDD /* HomeChurchesTableVC.swift in Sources */,
@@ -760,6 +952,7 @@
 		};
 		8362354A1E7DA28100F5844B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15BA5527D784CD86A1215264 /* Pods-WedeChurchIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -781,6 +974,7 @@
 		};
 		8362354B1E7DA28100F5844B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 535F95642A8E89BB9854E2BC /* Pods-WedeChurchIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -801,6 +995,7 @@
 		};
 		8362354D1E7DA28100F5844B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E185E2B7F8C2AA042783ABC5 /* Pods-WedeChurchIOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -815,6 +1010,7 @@
 		};
 		8362354E1E7DA28100F5844B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA20692CC12D5D073E2CEFF /* Pods-WedeChurchIOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -829,6 +1025,7 @@
 		};
 		836235501E7DA28100F5844B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A75B1C322F2E39B310557B38 /* Pods-WedeChurchIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WedeChurchIOSUITests/Info.plist;
@@ -842,6 +1039,7 @@
 		};
 		836235511E7DA28100F5844B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A4AA8054C56F3480F39EE43 /* Pods-WedeChurchIOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = WedeChurchIOSUITests/Info.plist;
