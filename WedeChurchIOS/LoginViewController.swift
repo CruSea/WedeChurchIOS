@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SVProgressHUD
+import MBProgressHUD
 import SystemConfiguration
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
@@ -105,8 +107,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     func validateLoginDetails(){
-       // self.showMBProgressHUD()
-        
+      //  self.showMBProgressHUD()
+       // SVProgressHUD.show()
         if (txtEmail.text?.length)! > 0  {
             usernameString = txtEmail.text! as NSString
         }
@@ -123,6 +125,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         let dataTask = session.dataTask(with: request as URLRequest,completionHandler: {(data,response,error) in
           //  self.hideMBProgressHUD()
+//            SVProgressHUD.dismiss()
             
             if let HTTPResponse = response as? HTTPURLResponse {
                 let statusCode = HTTPResponse.statusCode
@@ -181,17 +184,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //        }
     }
     
-//    func showMBProgressHUD() {
-//        let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
-//        hud.mode = MBProgressHUDMode.indeterminate
-//        hud.label.text = "Authenticating..."
-//    }
-//    
-//    func hideMBProgressHUD() {
-//        DispatchQueue.main.async {
-//            MBProgressHUD.hide(for: self.view, animated: true)
-//        }
-//    }
+    func showMBProgressHUD() {
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        hud.mode = MBProgressHUDMode.indeterminate
+        hud.label.text = "Authenticating..."
+    }
+    
+    func hideMBProgressHUD() {
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+        }
+    }
     
     
     override func didReceiveMemoryWarning() {

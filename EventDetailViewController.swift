@@ -7,56 +7,48 @@
 //
 
 import UIKit
+import SDWebImage
 
 class EventDetailViewController: UIViewController {
     @IBOutlet weak var detailImage: UIImageView!
 
     @IBOutlet weak var detailEventView: UITextView!
     @IBOutlet weak var detaileventLabel: UILabel!
+    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var startTime: UILabel!
+    @IBOutlet weak var endtime: UILabel!
+    @IBOutlet weak var category: UILabel!
     
-    var eventListName: AnyObject? {
-        
-        get {
-            return UserDefaults.standard.object(forKey: "eventListName") as AnyObject?
-        }
-        
-    }
-    //get imagesfrom main eventviewcntroller
-    var eventListImage: AnyObject? {
-        
-        get {
-            return UserDefaults.standard.object(forKey: "eventListImage") as AnyObject?
-        }
-        
-    }
+    //data from previous controller
+    var nameString:String!
+    var imageString:String!
+    var locationString:String!
+    var longitudeString:String!
+    var latitudeString:String!
+    var contactString:String!
+    var descriptionString:String!
+    var dateString:String!
     
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        detaileventLabel.text = eventListName as? String
-        detailImage.image = UIImage(named: eventListImage as! String)
-       // detailImage.layer.cornerRadius = 20.0
-        
-
+       updateUI()
         
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+    func updateUI() {
+        self.detaileventLabel.text = nameString
+        self.location.text = locationString
+        self.endtime.text = dateString
+        self.detailEventView.text = descriptionString
+        
+        
+        detailImage.sd_setImage(with: URL(string: imageString), placeholderImage: #imageLiteral(resourceName: "Wedechurch-Icon"), options: [.progressiveDownload])
+        
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
-    
 
 }

@@ -24,7 +24,7 @@ class menuViewController: UIViewController {
         UserDefaults.standard.synchronize();
         
         self.performSegue(withIdentifier: "loginAgain", sender: self);
-        self.dismiss(animated: true, completion: nil)
+       // self.dismiss(animated: true, completion: nil)
     }
  
 }

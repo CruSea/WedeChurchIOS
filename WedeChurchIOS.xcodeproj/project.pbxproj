@@ -36,12 +36,15 @@
 		833317231EAF2CEA003DCF71 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833317211EAF2CEA003DCF71 /* WalkthroughViewController.swift */; };
 		833317241EAF2CEA003DCF71 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833317221EAF2CEA003DCF71 /* PageViewController.swift */; };
 		833317271EAF3A90003DCF71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833317261EAF3A90003DCF71 /* Assets.xcassets */; };
+		834591251F55611900FD38A3 /* MyEventrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834591241F55611900FD38A3 /* MyEventrialViewController.swift */; };
 		834FC7CC1E92EB8000B0E0BB /* BottomLocationVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834FC7CB1E92EB8000B0E0BB /* BottomLocationVCViewController.swift */; };
 		834FC7CE1E92EBFB00B0E0BB /* FavouriteBottomVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834FC7CD1E92EBFB00B0E0BB /* FavouriteBottomVCTableViewCell.swift */; };
 		83536EBE1E8D4577003A8FC4 /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83536EBD1E8D4577003A8FC4 /* menuViewController.swift */; };
 		83536EC01E8D45AA003A8FC4 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83536EBF1E8D45AA003A8FC4 /* MenuCell.swift */; };
 		83536ECA1E8D4878003A8FC4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83536EC91E8D4878003A8FC4 /* SWRevealViewController.m */; };
 		83536ECF1E8D4DB5003A8FC4 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83536ECE1E8D4DB5003A8FC4 /* EventsViewController.swift */; };
+		8359093D1F4EE45F004B18C2 /* KeyboardAvoiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359093B1F4EE45F004B18C2 /* KeyboardAvoiding.swift */; };
+		8359093E1F4EE45F004B18C2 /* KeyboardDismissingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359093C1F4EE45F004B18C2 /* KeyboardDismissingView.swift */; };
 		836235251E7DA28000F5844B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836235241E7DA28000F5844B /* AppDelegate.swift */; };
 		8362352A1E7DA28000F5844B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836235281E7DA28000F5844B /* Main.storyboard */; };
 		8362352F1E7DA28100F5844B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8362352D1E7DA28100F5844B /* LaunchScreen.storyboard */; };
@@ -68,6 +71,7 @@
 		83D71F8F1E8BDF9600D1D356 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */; };
 		83EDFF281EC08C340008CFB3 /* EventMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDFF271EC08C340008CFB3 /* EventMainViewController.swift */; };
 		83EDFF2A1EC08C500008CFB3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDFF291EC08C500008CFB3 /* CollectionViewCell.swift */; };
+		83EEFBFC1F602BCB002EB554 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EEFBFB1F602BCB002EB554 /* Alamofire.framework */; };
 		83FEAE4F1EDD5E3600646E11 /* ChurchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEAE4E1EDD5E3600646E11 /* ChurchDetailViewController.swift */; };
 		9420D81A17CDAD63C9D20F21 /* Pods_WedeChurchIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA032388461D19FA9378123 /* Pods_WedeChurchIOSUITests.framework */; };
 		BCA21642E2CFFBE048B32828 /* Pods_WedeChurchIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EAB448D96A154A5A820F72 /* Pods_WedeChurchIOSTests.framework */; };
@@ -138,6 +142,7 @@
 		833317211EAF2CEA003DCF71 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		833317221EAF2CEA003DCF71 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		833317261EAF3A90003DCF71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		834591241F55611900FD38A3 /* MyEventrialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEventrialViewController.swift; sourceTree = "<group>"; };
 		834FC7CB1E92EB8000B0E0BB /* BottomLocationVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomLocationVCViewController.swift; sourceTree = "<group>"; };
 		834FC7CD1E92EBFB00B0E0BB /* FavouriteBottomVCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteBottomVCTableViewCell.swift; sourceTree = "<group>"; };
 		83536EBD1E8D4577003A8FC4 /* menuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +151,8 @@
 		83536EC91E8D4878003A8FC4 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = WedeChurchIOS/SWRevealViewController.m; sourceTree = "<group>"; };
 		83536ECB1E8D4891003A8FC4 /* WedeChurchIOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WedeChurchIOS-Bridging-Header.h"; path = "WedeChurchIOS/WedeChurchIOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		83536ECE1E8D4DB5003A8FC4 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		8359093B1F4EE45F004B18C2 /* KeyboardAvoiding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAvoiding.swift; sourceTree = "<group>"; };
+		8359093C1F4EE45F004B18C2 /* KeyboardDismissingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardDismissingView.swift; sourceTree = "<group>"; };
 		836235211E7DA28000F5844B /* WedeChurchIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WedeChurchIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836235241E7DA28000F5844B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		836235291E7DA28000F5844B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -178,6 +185,7 @@
 		83D71F8E1E8BDF9600D1D356 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = WedeChurchIOS/HomeViewController.swift; sourceTree = "<group>"; };
 		83EDFF271EC08C340008CFB3 /* EventMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMainViewController.swift; sourceTree = "<group>"; };
 		83EDFF291EC08C500008CFB3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		83EEFBFB1F602BCB002EB554 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../Library/Developer/Xcode/DerivedData/WedeChurchIOS-euvdoyozskwnnjbammvdpkruyxsg/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		83FEAE4E1EDD5E3600646E11 /* ChurchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchDetailViewController.swift; sourceTree = "<group>"; };
 		A75B1C322F2E39B310557B38 /* Pods-WedeChurchIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WedeChurchIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WedeChurchIOSUITests/Pods-WedeChurchIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF1CA8F81A4ED07773A369DE /* Pods_WedeChurchIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WedeChurchIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EEFBFC1F602BCB002EB554 /* Alamofire.framework in Frameworks */,
 				832AC8BC1EE59C900065A5EA /* CoreLocation.framework in Frameworks */,
 				2D58F6A00A0DDBCC391EF487 /* Pods_WedeChurchIOS.framework in Frameworks */,
 			);
@@ -241,6 +250,7 @@
 		832AC8BA1EE59C900065A5EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83EEFBFB1F602BCB002EB554 /* Alamofire.framework */,
 				832AC8BB1EE59C900065A5EA /* CoreLocation.framework */,
 				AF1CA8F81A4ED07773A369DE /* Pods_WedeChurchIOS.framework */,
 				06EAB448D96A154A5A820F72 /* Pods_WedeChurchIOSTests.framework */,
@@ -270,9 +280,19 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		8359093A1F4EE441004B18C2 /* KeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				8359093B1F4EE45F004B18C2 /* KeyboardAvoiding.swift */,
+				8359093C1F4EE45F004B18C2 /* KeyboardDismissingView.swift */,
+			);
+			name = KeyboardAvoiding;
+			sourceTree = "<group>";
+		};
 		836235181E7DA28000F5844B = {
 			isa = PBXGroup;
 			children = (
+				834591241F55611900FD38A3 /* MyEventrialViewController.swift */,
 				83D3A4241F4DBE2000AF686A /* MySIgnViewController.swift */,
 				836235231E7DA28000F5844B /* WedeChurchIOS */,
 				836235381E7DA28100F5844B /* WedeChurchIOSTests */,
@@ -296,6 +316,7 @@
 		836235231E7DA28000F5844B /* WedeChurchIOS */ = {
 			isa = PBXGroup;
 			children = (
+				8359093A1F4EE441004B18C2 /* KeyboardAvoiding */,
 				831C96EF1F1515B700931257 /* HomePage */,
 				832179C01EFFA80F00FCB6B3 /* View */,
 				83BF0EE41EE95FC800EBD759 /* Favorites */,
@@ -761,6 +782,7 @@
 				832179BB1EFFA80200FCB6B3 /* FancyView.swift in Sources */,
 				832179BF1EFFA80C00FCB6B3 /* FancyBtn.swift in Sources */,
 				83AB27A61EF019B600A39620 /* FavoritesTabController.swift in Sources */,
+				834591251F55611900FD38A3 /* MyEventrialViewController.swift in Sources */,
 				832179C61EFFC9E800FCB6B3 /* MyChurchDetailEventVC.swift in Sources */,
 				832179C81EFFD94F00FCB6B3 /* FavChurchesCollectionViewCell.swift in Sources */,
 				83ACCFD31EEFCA96001F9196 /* SettingViewController.swift in Sources */,
@@ -773,6 +795,7 @@
 				836F0C811E82B8AE0093C936 /* LoginViewController.swift in Sources */,
 				83D3A4291F4DC45D00AF686A /* phoneConstant.swift in Sources */,
 				8321D8091EFBB3DF002AE1B7 /* FavChurchVC.swift in Sources */,
+				8359093E1F4EE45F004B18C2 /* KeyboardDismissingView.swift in Sources */,
 				83BF0EE01EE9391800EBD759 /* OneChurchCollectionViewCell.swift in Sources */,
 				832179B91EFFA7F800FCB6B3 /* CircleView.swift in Sources */,
 				8310A6111EEACFF400D24555 /* FavoriteViewController.swift in Sources */,
@@ -801,6 +824,7 @@
 				833317231EAF2CEA003DCF71 /* WalkthroughViewController.swift in Sources */,
 				833317241EAF2CEA003DCF71 /* PageViewController.swift in Sources */,
 				836235251E7DA28000F5844B /* AppDelegate.swift in Sources */,
+				8359093D1F4EE45F004B18C2 /* KeyboardAvoiding.swift in Sources */,
 				8321D8071EFBA4E3002AE1B7 /* FavChurcheTableViewController.swift in Sources */,
 				832D4C971F164E5E009A7BDD /* HomeEventsTableVC.swift in Sources */,
 				832FF3B31EC19F8100310B4F /* EventDetailViewController.swift in Sources */,
@@ -962,7 +986,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WedeChurchIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gcmeds.WedeChurchIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -984,7 +1008,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = WedeChurchIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gcmeds.WedeChurchIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";

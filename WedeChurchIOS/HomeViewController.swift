@@ -33,9 +33,9 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
         Map.setRegion(region, animated: true)
         
-        print(location.altitude)
-        print(location.speed)
-        
+//        print(location.altitude)
+//        print(location.speed)
+//        
         self.Map.showsUserLocation = true
         manager.stopUpdatingLocation()
     }
@@ -81,12 +81,12 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidAppear(_ animated: Bool)
     {
         
-        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn");
-        
-        if(!isUserLoggedIn)
-        {
-            self.performSegue(withIdentifier: "loginView", sender: self);
-        }
+//        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn");
+//        
+//        if(!isUserLoggedIn)
+//        {
+//            self.performSegue(withIdentifier: "loginView", sender: self);
+//        }
         
         
     }
