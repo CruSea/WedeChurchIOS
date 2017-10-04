@@ -69,7 +69,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
     func bottomView(){
         
-        let bottomVC = storyboard?.instantiateViewController(withIdentifier: "frequentBottomVC") as! BottomLocationVCViewController
+        let bottomVC = storyboard?.instantiateViewController(withIdentifier: "frequentBottomVC") as! HomeEventsTableVC
         
         bottomVC.view.frame = CGRect(x: 0, y: UIScreen.main.bounds.height , width: self.view.frame.width, height: self.view.frame.height)
         self.addChildViewController(bottomVC)

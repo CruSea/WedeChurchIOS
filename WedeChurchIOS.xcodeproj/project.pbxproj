@@ -74,6 +74,7 @@
 		83EEFBFC1F602BCB002EB554 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EEFBFB1F602BCB002EB554 /* Alamofire.framework */; };
 		83FEAE4F1EDD5E3600646E11 /* ChurchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEAE4E1EDD5E3600646E11 /* ChurchDetailViewController.swift */; };
 		9420D81A17CDAD63C9D20F21 /* Pods_WedeChurchIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA032388461D19FA9378123 /* Pods_WedeChurchIOSUITests.framework */; };
+		AEACBA171F850EC90046BD32 /* HomeEventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEACBA161F850EC90046BD32 /* HomeEventDetailVC.swift */; };
 		BCA21642E2CFFBE048B32828 /* Pods_WedeChurchIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EAB448D96A154A5A820F72 /* Pods_WedeChurchIOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -188,6 +189,7 @@
 		83EEFBFB1F602BCB002EB554 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../Library/Developer/Xcode/DerivedData/WedeChurchIOS-euvdoyozskwnnjbammvdpkruyxsg/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		83FEAE4E1EDD5E3600646E11 /* ChurchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchDetailViewController.swift; sourceTree = "<group>"; };
 		A75B1C322F2E39B310557B38 /* Pods-WedeChurchIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WedeChurchIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WedeChurchIOSUITests/Pods-WedeChurchIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEACBA161F850EC90046BD32 /* HomeEventDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeEventDetailVC.swift; sourceTree = "<group>"; };
 		AF1CA8F81A4ED07773A369DE /* Pods_WedeChurchIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WedeChurchIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E185E2B7F8C2AA042783ABC5 /* Pods-WedeChurchIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WedeChurchIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WedeChurchIOSTests/Pods-WedeChurchIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -448,6 +450,7 @@
 			children = (
 				832D4C931F164E5E009A7BDD /* HomeEventsTableVC.swift */,
 				832D4C951F164E5E009A7BDD /* HomeEventsTableViewCell.swift */,
+				AEACBA161F850EC90046BD32 /* HomeEventDetailVC.swift */,
 			);
 			name = HomePageEvents;
 			sourceTree = "<group>";
@@ -805,6 +808,7 @@
 				832179C21EFFA83E00FCB6B3 /* Constants.swift in Sources */,
 				831C96F11F1515F800931257 /* MapTypeViewController.swift in Sources */,
 				83EDFF2A1EC08C500008CFB3 /* CollectionViewCell.swift in Sources */,
+				AEACBA171F850EC90046BD32 /* HomeEventDetailVC.swift in Sources */,
 				83D3A4251F4DBE2000AF686A /* MySIgnViewController.swift in Sources */,
 				832179C41EFFC13200FCB6B3 /* MyChurchCollectionViewCell.swift in Sources */,
 				83ACCFD11EEFCA6B001F9196 /* ProfileViewController.swift in Sources */,

@@ -14,7 +14,10 @@ import SDWebImage
 
 class HomeEventsTableVC: UITableViewController {
     
-
+    var partialView: CGFloat {
+        return UIScreen.main.bounds.height - 150
+    }
+    var fullView: CGFloat = 150
     
     // outlet - table view
     @IBOutlet var myTableView: UITableView!
@@ -63,8 +66,8 @@ class HomeEventsTableVC: UITableViewController {
             // country = UserDefaults.standard.value(forKey: "country") as! NSString?
             
             if isInternetAvailable() {
-                // print("internet available")
-                self.getDataFromServer()
+                 print("internet available")
+               // self.getDataFromServer()
             }else{
                 print("internet not available")
                 // self.fetchDataFromDB()
@@ -80,15 +83,20 @@ class HomeEventsTableVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
+        //bottomsheetview controller click functioin
+        addGestureForBottomAnimation()
+        getDataFromServer()
           }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        animateAfterViewAppear()
+    }
 
     func getDataFromServer(){
         //   self.showMBProgressHUD()
         
         
-        let parameters = ["service": "event_get" , "param": ""]
+        let parameters = ["service": "church_get" , "param": ""]
         let url = URL(string: "http://wede.myims.org/api")
         var request = URLRequest(url: url!)
         request.httpMethod = "POST"
@@ -105,35 +113,34 @@ class HomeEventsTableVC: UITableViewController {
                         // print(jsonObj as AnyObject)
                         
                         if let eventArray = jsonObj!.value(forKey: "response") as? NSArray {
+                            print(eventArray)
                             for events in eventArray{
                                 if let eventsDict = events as? NSDictionary {
                                     if let name = eventsDict.value(forKey: "name") {
                                         self.nameArray.append(name as! String)
-                                        //print(self.nameArray)
+                                        print(self.nameArray)
                                     }
-                                    //                                    if let name = actorDict.value(forKey: "dob") {
-                                    //                                        self.dobArray.append(name as! String)
-                                    //                                    }
+                                    
                                     if let eventImageOne = eventsDict.value(forKey: "banner") {
                                         self.imageURL.append(eventImageOne as! String)
-                                        // print(self.imageURL)
+                                        print(self.imageURL)
                                     }
-                                    if let eventLoc = eventsDict.value(forKey: "location") {
-                                        self.location.append(eventLoc as! String)
-                                    }
-                                    if let eventLat = eventsDict.value(forKey: "latitude") {
-                                        self.latitude.append(eventLat as! String)
-                                    }
-                                    let eventLong = eventsDict.value(forKey: "longitude") as AnyObject
-                                    self.longitude.append(eventLong as! String)
-                                    
-                                    
-                                    if let eventContactInfo = eventsDict.value(forKey: "contact_info") {
-                                        self.contactInfo.append(eventContactInfo as! String)
-                                    }
-                                    if let eventDesc = eventsDict.value(forKey: "description") {
-                                        self.eventDescription.append(eventDesc as! String)
-                                    }
+//                                    if let eventLoc = eventsDict.value(forKey: "location") {
+//                                        self.location.append(eventLoc as! String)
+//                                    }
+//                                    if let eventLat = eventsDict.value(forKey: "latitude") {
+//                                        self.latitude.append(eventLat as! String)
+//                                    }
+//                                    let eventLong = eventsDict.value(forKey: "longitude") as AnyObject
+//                                    self.longitude.append(eventLong as! String)
+//                                    
+//                                    
+//                                    if let eventContactInfo = eventsDict.value(forKey: "contact_info") {
+//                                        self.contactInfo.append(eventContactInfo as! String)
+//                                    }
+//                                    if let eventDesc = eventsDict.value(forKey: "description") {
+//                                        self.eventDescription.append(eventDesc as! String)
+//                                    }
                                     
                                     
                                 }
@@ -148,22 +155,22 @@ class HomeEventsTableVC: UITableViewController {
                                     }
                                     
                                     
-                                    
+
                                 }
                                 // event linked church id
-                                if let thirdResponse = events as? NSDictionary {
-                                    
-                                    if let churchId = thirdResponse["church_id"] as? NSDictionary
-                                    {
-                                        let eventChurchId = churchId.value(forKey: "name") as? String
-                                        print(eventChurchId as AnyObject)
-                                        
-                                    }
-                                    
-                                    
-                                    
-                                }
-                                
+//                                if let thirdResponse = events as? NSDictionary {
+//                                    
+//                                    if let churchId = thirdResponse["church_id"] as? NSDictionary
+//                                    {
+//                                        let eventChurchId = churchId.value(forKey: "name") as? String
+//                                        print(eventChurchId as AnyObject)
+//                                        
+//                                    }
+//                                    
+//                                    
+//                                    
+//                                }
+//                                
                                 
                                 
                                 
@@ -242,14 +249,14 @@ class HomeEventsTableVC: UITableViewController {
     ///for showing next detailed screen with the downloaded info
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "EventDetailViewController") as! EventDetailViewController
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeEventDetailVC") as! HomeEventDetailVC
         vc.imageString = imageURL[indexPath.row]
         vc.nameString = nameArray[indexPath.row]
-        vc.locationString = location[indexPath.row]
-        vc.longitudeString = longitude[indexPath.row]
-        vc.latitudeString = latitude[indexPath.row]
-        vc.contactString = contactInfo[indexPath.row]
-        vc.descriptionString = eventDescription[indexPath.row]
+//        vc.locationString = location[indexPath.row]
+//        vc.longitudeString = longitude[indexPath.row]
+//        vc.latitudeString = latitude[indexPath.row]
+//        vc.contactString = contactInfo[indexPath.row]
+//        vc.descriptionString = eventDescription[indexPath.row]
         vc.dateString = eventWebDate[indexPath.row]
         
         self.navigationController?.pushViewController(vc, animated: true)
@@ -282,4 +289,50 @@ class HomeEventsTableVC: UITableViewController {
     }
     
 }
+extension HomeEventsTableVC:UIGestureRecognizerDelegate{
+    func addGestureForBottomAnimation(){
+        let swipedOnImage = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(recognizer:)))
+        view.addGestureRecognizer(swipedOnImage)
+        view.isUserInteractionEnabled = true
+        swipedOnImage.delegate = self
+    }
+    
+    //MARK:- Animate afterViewWill Appear
+    func animateAfterViewAppear(){
+        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.8, options: .curveLinear, animations: {
+            self.view.frame = CGRect(x: 0, y: self.fullView, width: self.view.frame.width, height: self.view.frame.height)
+        }, completion: nil)
+    }
+    
+    //MARK:- animate by dragging view
+    func panGesture(recognizer: UIPanGestureRecognizer) {
+        let translation = recognizer.translation( in: self.view)
+        let velocity = recognizer.velocity(in: self.view)
+        let y = self.view.frame.minY
+        //translate y postion when drag within fullview to partial view
+        if (y + translation.y >= fullView) && (y + translation.y <= partialView) {
+            
+            self.view.frame = CGRect(x: 0, y: y + translation.y, width: view.frame.width, height: view.frame.height)
+            recognizer.setTranslation(CGPoint(x:0,y:0), in: self.view)
+        }
+        if recognizer.state == .ended {
+            var duration =  velocity.y < 0 ? Double((y - fullView) / -velocity.y) : Double((partialView - y) / velocity.y )
+            
+            duration = duration > 1.5 ? 1 : duration
+            UIView.animate(withDuration: duration, delay: 0.0, options: [.allowUserInteraction], animations: {
+                if  velocity.y >= 0 {
+                    self.view.frame = CGRect(x: 0, y: self.partialView, width: self.view.frame.width, height: self.view.frame.height)
+                } else {
+                    
+                    self.view.frame = CGRect(x: 0, y: self.fullView, width: self.view.frame.width, height: self.view.frame.height)
+                }
+                
+            }, completion: nil)
+        }
+    }
+    
+    
+}
+
+
 

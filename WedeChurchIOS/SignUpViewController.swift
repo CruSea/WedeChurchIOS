@@ -64,20 +64,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         getGender.isHidden = true
         self.txtGender.inputAccessoryView = getGender
         
-//        let fontSize = phoneConstant.deviceWidth/20
-//        
-//        txtUsrName.font = UIFont(name: txtUsrName.font!.fontName , size: fontSize)
-//        txtFrstName.font = UIFont(name: txtFrstName.font!.fontName , size: fontSize)
-//        txtLstName.font = UIFont(name: txtLstName.font!.fontName , size: fontSize)
-//        txtEmail.font = UIFont(name: txtEmail.font!.fontName , size: fontSize)
-//        txtGender.font = UIFont(name: txtGender.font!.fontName , size: fontSize)
-//        txtCountry.font = UIFont(name: txtCountry.font!.fontName , size: fontSize)
-//        txtPhone.font = UIFont(name: txtPhone.font!.fontName , size: fontSize)
-//        txtPass.font = UIFont(name: txtPass.font!.fontName , size: fontSize)
-//        txtconfPass.font = UIFont(name: txtconfPass.font!.fontName , size: fontSize)
-//        
-//        btnSignup.titleLabel!.font = UIFont(name: btnSignup.titleLabel!.font!.fontName , size: fontSize)
-//        // Do any additional setup after loading the view.
+        //hide keyboard in touching any place
+        self.hideKeyboardWhenTappedAround()
     }
     
     
@@ -381,5 +369,18 @@ extension Collection where Iterator.Element == [String:AnyObject] {
 private extension String {
     var length: Int {
         return utf16.count
+    }
+}
+
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
